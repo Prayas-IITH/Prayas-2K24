@@ -9,7 +9,7 @@ import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import Navbar from "./components/header";
-import Footer from './components/footer';
+import Footer from "./components/footer";
 import "./index.css";
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/team" element={<Team />} />
           <Route path="/donate" element={<Donate />} />
-          <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
           <Route path="*" element={<Error />} />
         </Routes>
       </div>

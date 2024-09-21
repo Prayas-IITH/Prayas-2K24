@@ -8,8 +8,10 @@ export default {
       fontSize: ["focus", "valid"],
       fontWeight: ["focus", "valid"],
       top: ["focus", "valid"],
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"],
+      },
     },
   },
   plugins: [],
 };
-
