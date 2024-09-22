@@ -46,7 +46,7 @@ const PrayasInfo = () => {
 
 const Home = () => {
     return (
-        <div className='bg-[#FFF45D]'>
+        <div>
             <About />
             <PrayasInfo />
         </div>

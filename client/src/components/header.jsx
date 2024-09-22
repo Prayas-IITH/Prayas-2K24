@@ -22,7 +22,7 @@ function Navbar() {
             className={({ isActive }) =>
               `text-sm px-1 transition-all duration-300 rounded ${
                 isActive
-                  ? "bg-no-repeat bg-center bg-contain text-white scale-105"
+                  ? "bg-no-repeat bg-center bg-contain scale-x-125 text-white scale-105"
                   : "hover:text-yellow-400 scale-100"
               }`
             }

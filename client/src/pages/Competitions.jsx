@@ -4,7 +4,7 @@ import backgroundImage from '../../public/Kids.jpeg'; // Adjust the path as need
 const Competitions = () => {
   return (
     <div
-      className="text-center py-10 bg-[#FFF45D]"
+      className="text-center py-10"
     >
       <h1 className="text-4xl font-bold mb-4">COMPETITIONS</h1>
       <div className="flex justify-center items-center mb-8">
