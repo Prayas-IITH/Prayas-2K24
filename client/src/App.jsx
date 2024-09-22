@@ -9,16 +9,16 @@ import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import Navbar from "./components/header";
-import Footer from "./components/footer";
 import "./index.css";
+import Footer from "./components/Footer";
 
 function App() {
   const location = useLocation();
 
   return (
-    <div className="select-none flex flex-col min-h-screen bg-[#120c09]">
+    <div className="select-none app flex flex-col bg-[#FFF5D4] min-h-screen">
       <Navbar />
-      <div className="flex-grow">
+      <div className="flex flex-col items-center flex-grow">
         <Routes location={location} key={location.key}>
           <Route path="/" element={<About />} />
           <Route path="/announcements" element={<Announcements />} />
@@ -26,11 +26,11 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/team" element={<Team />} />
           <Route path="/donate" element={<Donate />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
