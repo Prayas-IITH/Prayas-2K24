@@ -1,194 +1,86 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import TeamMember from "../components/TeamMember";
+import DividerImage from "/public/team/divider.png"; // Import the divider image
 
-const Coordinators = {
-  FinanceCoordinators: ["Amit Vikram", "Aryan Bubna","Abhinav"],
-  LogisticsCoordinators: ["Omkar Nilkanth", "Mohit Borse","Pratyushree Ghose"],
-  EventsCoordinators:["Deddepya","Sahasra","Pritesh"],
-  MultimediaCoordinators:["C.Rachana","Annant Pathak","Aishwarya Nambiar"],
-  WebCoordinators:["Sathwik Kodamarthi","Naishadha","Praneeth Chamarthy","Sai Chandan"],
-  VolunteerCoordinators:["Sai Rishi Kasuri","Achal Singh","Prince Verma"],
-  PrOutreachVolunteers:["Sneha Das","Sukesh Kumar","Sri Nithya S"]
-};
+function Team() {
+  const [teams, setTeams] = useState([]); 
 
-const TeamMember = ({ coordinators }) => {
+  useEffect(() => {
+    fetch("/team/Team.json")
+      .then((response) => response.json())
+      .then((data) => setTeams(data))
+      .catch((error) => console.error("Error fetching JSON:", error));
+  }, []);
+
   return (
-    <div className="absolute mt-auto flex flex-flexbox justify-end text-left font-serif text-6xl">
-      {coordinators && (
-        <div className="coordinators ml-0">
-          <h4 className="font-semibold text-lg text-white">Coordinators:</h4>
-          <ul className="list-disc list-inside text-sm text-white pl-4">
-            {coordinators.map((coordinator, index) => (
-              <li key={index}>{coordinator}</li>
-            ))}
-          </ul>
+    <div className="w-screen min-h-screen">
+      {teams.map((team) => (
+        <div key={team.name} className="flex flex-col items-center justify-center">
+          <div className="relative flex items-center justify-center h-4/5 w-screen my-10 md:my-16">
+            <p className="relative z-10 text-black font-Montserrat text-center text-xl sm:text-3xl lg:text-3xl">
+              {team.name}
+            </p>
+          </div>
+          
+          {/* Divider Image */}
+          <div className="flex items-center justify-center my-4 md:my-6">
+            <img
+              src={DividerImage}
+              alt="Divider"
+              className="w-auto h-8 md:h-8" // Adjust size as needed
+            />
+          </div>
+
+          {/* Team Heads Section */}
+          <div className="flex items-center justify-center my-6 md:my-10">
+            <div
+              className={`w-full grid gap-12 ${
+                team.heads.length === 1
+                  ? "grid-cols-1"
+                  : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-2"
+              }`}
+            >
+              <div className="flex items-center justify-center my-4">
+                <p className="text-2xl font-semibold text-gray-700">Heads</p>
+              </div>
+              {team.heads.map((head) => (
+                <TeamMember
+                  key={head.name}
+                  name={head.name}
+                  personImage={head.image || "/team/Heads/Missing.png"}
+                  size="large" // Pass size as "large" for heads
+                />
+              ))}
+            </div>
+          </div>
+
+          <div className="flex items-center justify-center my-4">
+            <p className="text-2xl font-semibold text-gray-700">Coordinators</p>
+          </div>
+
+          {/* Coordinators Section */}
+          <div className="flex items-center justify-center my-10 md:my-16">
+            <div
+              className={`w-full grid gap-12 mt-10 ${
+                team.coords.length < 3
+                  ? "grid-cols-2"
+                  : "grid-cols-2 sm:grid-cols-3 lg:grid-cols-3"
+              }`}
+            >
+              {team.coords.map((coord) => (
+                <TeamMember
+                  key={coord.name}
+                  name={coord.name}
+                  personImage={coord.image || "/TEAM/Coords/Missing.png"}
+                  size="small" // Pass size as "small" for coordinators
+                />
+              ))}
+            </div>
+          </div>
         </div>
-      )}
+      ))}
     </div>
   );
-};
+}
 
-const Card = ({ image, name, role, head }) => {
-  return (
-    <div className="relative w-[473px] h-[400px] mx-auto">
-      <div className="relative w-[500px] h-[329px] mx-auto">
-        <div className="absolute bottom-0 left-80 w-[234px] h-[65px] bg-[#d9d9d9] rounded-[40px] flex items-center justify-center">
-          <div className="text-center">
-            <div className="text-black text-xl font-semibold">{name}</div>
-            <div className="text-black text-lg">{role}</div>
-          </div>
-        </div>
-        <div className="absolute top-[38px] left-80 w-60 h-[233px] rounded-full bg-[#c4c4c4] overflow-hidden flex items-center justify-center">
-          {/* Image inside the circle */}
-          <img src={image} alt={`${name}`} className="w-full h-full object-cover rounded-full" />
-        </div>
-        <div className="absolute top-0 left-0 transform rotate-[0.25deg] [font-family:'Inter-SemiBold',Helvetica] font-semibold text-white text-[50px]">
-          {head}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const TeamPage = () => {
-  return (
-    <div className="team-page">
-      <div className="team-grid">
-        <div className='flex flex-row'>
-          <div className='flex mx-auto flex-row items-center'>
-            <Card
-              name="Gayatri Priya"
-              head="Overall head"
-              role="Overall head"
-              image="src/components/images/oc.jpg"
-            />
-          </div>
-          <div className="h-[329px] w-[2px] bg-gray-400 mx-4 ml-10"></div>
-
-          <div className='flex mx-auto flex-row flex-row items-center'>
-            <Card
-              name="Harshitha Chanchal"
-              head="VCU"
-              role="Head of VCU"
-              image="src/components/images/Harshita Chanchal.jpg"
-            />
-            <TeamMember
-              coordinators={Coordinators.VolunteerCoordinators}
-            />
-          </div>
-        </div>
-
-        <div className="h-[2px] w-[1300px] bg-gray-400 mx-4 mb-12 ml-20"></div>
-        
-        <div className='flex flex-row'>
-          <div className='flex mx-auto flex-row items-center'>
-            <Card
-              name="Avantika Patil"
-              head="Finance"
-              role="Head of Finance"
-              image="src/components/images/avantika.jpg"
-            
-            />
-            <TeamMember
-              coordinators={Coordinators.FinanceCoordinators}
-            />
-          </div>
-
-          <div className="h-[329px] w-[2px] bg-gray-400 mx-4 ml-10"></div>
-
-          <div className='flex mx-auto flex-row items-center'>
-            <Card
-              name="Shaik P Pervez"
-              head="Logistics"
-              role="Head of Logistics"
-              image="src/components/images/Shaik P Parvez.jpeg"
-            />
-            <TeamMember
-              coordinators={Coordinators.LogisticsCoordinators}
-            />
-          </div>
-        </div>
-
-        <div className="h-[2px] w-[1300px] bg-gray-400 mx-4 mb-12 ml-20"></div>
-
-        <div className='flex flex-row'>
-          <div className='flex mx-auto flex-row items-center'>
-            <Card
-              name="Archana"
-              head="Events"
-              role="Head of Events"
-              image="path/to/archana_image.jpg"
-            />
-            <TeamMember
-              coordinators={Coordinators.EventsCoordinators}
-            />
-          </div>
-
-          <div className="h-[329px] w-[2px] bg-gray-400 mx-4 ml-10"></div>
-
-          <div className='flex mx-auto flex-row items-center'>
-            <Card
-              name="Abhishek"
-              head="Multimedia"
-              role="Head of Multimedia Design"
-              image="src/components/images/abhishek.jpg"
-            />
-            <TeamMember
-              coordinators={Coordinators.MultimediaCoordinators}
-            />
-          </div>
-        </div>
-
-        <div className="h-[2px] w-[1300px] bg-gray-400 mx-4 mb-12 ml-20"></div>
-
-        <div className='flex flex-row'>
-          <div className='flex mx-auto flex-row items-center'>
-            <Card
-              name="Tejasri"
-              head="Web Dev"
-              role="Head of Web"
-              image="src/components/images/tejasri.jpg"
-            />
-            <TeamMember
-              coordinators={Coordinators.WebCoordinators}
-            />
-          </div>
-
-          <div className="h-[329px] w-[2px] bg-gray-400 mx-4 ml-10"></div>
-
-          <div className='flex mx-auto flex-row items-center'>
-            <Card
-              name="Vinay"
-              head="PR Outreach"
-              role="Head of PR Outreach"
-              image="src/components/images/vinay.jpg"
-            />
-            <TeamMember
-              coordinators={Coordinators.PrOutreachVolunteers}
-            />
-          </div>
-        </div>
-
-        <div className="absolute w-[365px] h-[529px] top-[1761px] left-[541px]">
-          <div className="absolute w-[303px] top-10 left-[170px] [font-family:'Inter-SemiBold',Helvetica] font-semibold text-black text-[50px] tracking-[0] leading-[normal]">
-            Mentors
-          </div>
-          <div className="absolute w-[342px] h-[364px] top-[165px] left-0 bg-[#d9d9d9]" />
-        </div>
-
-        <div className="absolute w-[342px] h-[364px] top-[1926px] left-[98px] bg-[#d9d9d9]" />
-        <div className="absolute w-[342px] h-[364px] top-[1926px] left-[983px] bg-[#d9d9d9]" />
-        <div className="absolute w-[295px] top-[2332px] left-[195px] [font-family:'Inter-SemiBold',Helvetica] font-semibold text-black text-[50px] tracking-[0] leading-[normal]">
-          name
-        </div>
-        <div className="left-[632px] absolute w-[295px] top-[2332px] [font-family:'Inter-SemiBold',Helvetica] font-semibold text-black text-[50px] tracking-[0] leading-[normal]">
-          name
-        </div>
-        <div className="left-[1097px] absolute w-[295px] top-[2332px] [font-family:'Inter-SemiBold',Helvetica] font-semibold text-black text-[50px] tracking-[0] leading-[normal]">
-          name
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default TeamPage;
+export default Team;

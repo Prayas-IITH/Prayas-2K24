@@ -1,0 +1,91 @@
+[   
+    
+    {
+      "name": "Logistics",
+      "heads": [
+        { "name": "Shaik P Parvez", "image": "/team/Heads/Shaik P Parvez.jpeg" }
+              ],
+      "coords": [
+        { "name": "Omkar Nilkanth", "image": "/team/Heads/vinay.jpg" },
+        { "name": "Mohit Borse", "image": "/team/Coords/Sameer Mirza.png" },
+        { "name": "Pratyushee Ghosh", "image": "/team/Coords/Aashna Sahu.png" }
+        
+      ]
+    },
+    {
+        "name": "PR Outreach",
+        "heads": [
+          { "name": "Vinay", "image": "/team/Heads/vinay.jpg" }
+                ],
+        "coords": [
+          { "name": "Sneha Das", "image": "/TEAM/Coords/Prudhvi Raj.png" },
+          { "name": "Sukesh Kumar", "image": "/TEAM/Coords/Sameer Mirza.png" },
+          { "name": "Sri Nithya S", "image": "/TEAM/Coords/Aashna Sahu.png" }
+          
+        ]
+      },
+      {
+        "name": "Finance",
+        "heads": [
+          { "name": "Avantika", "image": "/team/Heads/avantika.jpg" }
+                ],
+        "coords": [
+          { "name": "Amit Vikram", "image": "/TEAM/Heads/vinay.jpg" },
+          { "name": "Aryan Bubna", "image": "/TEAM/Coords/Sameer Mirza.png" },
+          { "name": "Abhinav", "image": "/TEAM/Coords/Aashna Sahu.png" }
+          
+        ]
+      },
+      {
+        "name": "Multimedia Design",
+        "heads": [
+          { "name": "Abhishek", "image": "/team/Heads/abhishek.jpg" }
+          
+                ],
+        "coords": [
+          { "name": "C.Rachana", "image": "/TEAM/Coords/Prudhvi Raj.png" },
+          { "name": "Annant Pathak", "image": "/TEAM/Coords/Sameer Mirza.png" },
+          { "name": "Aishwarya Nambiar", "image": "/TEAM/Coords/Aashna Sahu.png" }
+          
+        ]
+      },
+      {
+        "name": "VCU",
+        "heads": [
+          { "name": "Harshitha Chanchal", "image": "/team/Heads/Harshita Chanchal.jpg" }
+                ],
+        "coords": [
+          { "name": "Sai Rishi Kasturi", "image": "/TEAM/Coords/Prudhvi Raj.png" },
+          { "name": "Achal Singh", "image": "/TEAM/Coords/Sameer Mirza.png" },
+          { "name": "Prince Verma", "image": "/TEAM/Coords/Aashna Sahu.png" }
+          
+        ]
+      },
+      {
+        "name": "Web",
+        "heads": [
+          { "name": "Tejasri", "image": "/team/Heads/tejasri.jpg" }
+                ],
+        "coords": [
+          { "name": "Sathwik Kodamarthi", "image": "/TEAM/Coords/Prudhvi Raj.png" },
+          { "name": "Praneeth Chamarthy", "image": "/TEAM/Coords/Sameer Mirza.png" },
+          { "name": "Naishadha", "image": "/TEAM/Coords/Aashna Sahu.png" },
+          { "name": "Sai Chandan", "image": "/TEAM/Coords/Aashna Sahu.png" }
+        ]
+      },
+      {
+        "name": "Events",
+        "heads": [
+          { "name": "Archana", "image": "/team/Heads/Harshita Chanchal.jpg" }
+                ],
+        "coords": [
+          { "name": "Deddepya", "image": "/TEAM/Coords/Prudhvi Raj.png" },
+          { "name": "Sahasra", "image": "/TEAM/Coords/Sameer Mirza.png" },
+          { "name": "Pritesh", "image": "/TEAM/Coords/Aashna Sahu.png" }
+          
+        ]
+      }
+      
+    
+  ]
+  
