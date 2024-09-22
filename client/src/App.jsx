@@ -30,7 +30,9 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
-      <Footer/>
+      <div className="scale-75 md:scale-90 lg:scale-100">
+        <Footer />
+      </div>
     </div>
   );
 }
