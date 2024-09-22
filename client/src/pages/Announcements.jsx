@@ -5,32 +5,11 @@ import line from "../../public/line.png";
 function Announcements() {
   const data = [
     {
-      title: "Event 1",
-      photo: dummy,
-      date: "2022-01-01",
-      time: "10:00 AM",
-      venue: "Venue 1",
-    },
-    {
-      title: "Event 2",
-      photo: dummy,
-      date: "2022-01-01",
-      time: "10:00 AM",
-      venue: "Venue 2",
-    },
-    {
-      title: "Event 3",
-      photo: dummy,
-      date: "2022-01-01",
-      time: "10:00 AM",
-      venue: "Venue 3",
-    },
-    {
-      title: "Event 4",
-      photo: dummy,
-      date: "2022-01-01",
-      time: "10:00 AM",
-      venue: "Venue 4",
+      title: "School visit",
+      photo: "../../public/School_Visit_21_09.jpg",
+      date: "9/21/2024",
+      time: "10:00:00 AM",
+      venue: "Kandi",
     },
   ];
 

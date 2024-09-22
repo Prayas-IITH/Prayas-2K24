@@ -8,84 +8,31 @@ import "@splidejs/react-splide/css";
 const Gallery = () => {
   const events = [
     {
-      title: "Event 1",
+      title: "School visit",
       data: [
         {
-          image: "../../public/Dummy.jpg",
-          title: "Title 1",
+          image: "../../public/School_Visit_21_09.jpg",
+          title: "School Visit at ZPHS KANDI",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi quis enim id risus tincidunt ultrices.Risus tincidunt ultrices.Tincidunt ultrices.Lipsum dolor sit amet, consectetur adipiscing elit.Ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "We will conduct cleanliness awareness programs and few competitions on some topic and give few prizes. We spent the whole day over there and spent the time with them which helped them develop their skills in few things. We played few games with them which rejoiced them.",
         },
         {
-          image: "../../public/Dummy.jpg",
-          title: "Title 2",
+          image: "../../public/School_Visit_21_09_1.jpg",
+          title: "School Visit at ZPHS KANDI",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi quis enim id risus tincidunt ultrices.Risus tincidunt ultrices.Tincidunt ultrices.Lipsum dolor sit amet, consectetur adipiscing elit.Ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "We will conduct cleanliness awareness programs and few competitions on some topic and give few prizes. We spent the whole day over there and spent the time with them which helped them develop their skills in few things. We played few games with them which rejoiced them.",
         },
         {
-          image: "../../public/Dummy.jpg",
-          title: "Title 3",
+          image: "../../public/School_Visit_21_09_2.jpg",
+          title: "School Visit at ZPHS KANDI",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi quis enim id risus tincidunt ultrices.Risus tincidunt ultrices.Tincidunt ultrices.Lipsum dolor sit amet, consectetur adipiscing elit.Ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "We will conduct cleanliness awareness programs and few competitions on some topic and give few prizes. We spent the whole day over there and spent the time with them which helped them develop their skills in few things. We played few games with them which rejoiced them.",
         },
         {
-          image: "../../public/Dummy.jpg",
-          title: "Title 4",
+          image: "../../public/School_Visit_21_09_3.jpg",
+          title: "School Visit at ZPHS KANDI",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi quis enim id risus tincidunt ultrices.Risus tincidunt ultrices.Tincidunt ultrices.Lipsum dolor sit amet, consectetur adipiscing elit.Ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-        {
-          image: "../../public/Dummy.jpg",
-          title: "Title 5",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi quis enim id risus tincidunt ultrices.Risus tincidunt ultrices.Tincidunt ultrices.Lipsum dolor sit amet, consectetur adipiscing elit.Ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-        {
-          image: "../../public/Dummy.jpg",
-          title: "Title 6",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi quis enim id risus tincidunt ultrices.Risus tincidunt ultrices.Tincidunt ultrices.Lipsum dolor sit amet, consectetur adipiscing elit.Ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-      ],
-    },
-    {
-      title: "Event 2",
-      data: [
-        {
-          image: "../../public/Dummy.jpg",
-          title: "Title 1",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi quis enim id risus tincidunt ultrices.Risus tincidunt ultrices.Tincidunt ultrices.Lipsum dolor sit amet, consectetur adipiscing elit.Ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-        {
-          image: "../../public/Dummy.jpg",
-          title: "Title 2",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi quis enim id risus tincidunt ultrices.Risus tincidunt ultrices.Tincidunt ultrices.Lipsum dolor sit amet, consectetur adipiscing elit.Ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-        {
-          image: "../../public/Dummy.jpg",
-          title: "Title 3",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi quis enim id risus tincidunt ultrices.Risus tincidunt ultrices.Tincidunt ultrices.Lipsum dolor sit amet, consectetur adipiscing elit.Ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-        {
-          image: "../../public/Dummy.jpg",
-          title: "Title 4",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi quis enim id risus tincidunt ultrices.Risus tincidunt ultrices.Tincidunt ultrices.Lipsum dolor sit amet, consectetur adipiscing elit.Ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-        {
-          image: "../../public/Dummy.jpg",
-          title: "Title 5",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi quis enim id risus tincidunt ultrices.Risus tincidunt ultrices.Tincidunt ultrices.Lipsum dolor sit amet, consectetur adipiscing elit.Ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-        {
-          image: "../../public/Dummy.jpg",
-          title: "Title 6",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi quis enim id risus tincidunt ultrices.Risus tincidunt ultrices.Tincidunt ultrices.Lipsum dolor sit amet, consectetur adipiscing elit.Ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "We will conduct cleanliness awareness programs and few competitions on some topic and give few prizes. We spent the whole day over there and spent the time with them which helped them develop their skills in few things. We played few games with them which rejoiced them.",
         },
       ],
     },
@@ -119,7 +66,7 @@ const Gallery = () => {
           >
             {event.data.map((item, index) => (
               <SplideSlide key={index}>
-                <GalleryCard title={event.title} index={index} data={item} />
+                <GalleryCard title={event.title} index={0} data={item} />
               </SplideSlide>
             ))}
           </Splide>
