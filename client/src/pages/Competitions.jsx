@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from '../../public/Dummy.jpg'; // Adjust the path as needed
+import backgroundImage from '../../public/Kids.jpeg'; // Adjust the path as needed
 
 const Competitions = () => {
   return (
