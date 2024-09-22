@@ -10,3 +10,26 @@
 #headerRef:hover {
   @apply text-white underline underline-offset-8 transition-shadow
 }
+
+.app {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.app::before {
+  content: "";
+  position: absolute;
+  top: 25vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/public/bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1200px;
+  opacity: 0.2;
+  z-index: 10;
+  pointer-events: none;
+}

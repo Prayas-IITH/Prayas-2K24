@@ -8,10 +8,17 @@ export default {
       fontSize: ["focus", "valid"],
       fontWeight: ["focus", "valid"],
       top: ["focus", "valid"],
+    },
+  },
+  theme: {
+    extend: {
       fontFamily: {
-        sans: ["Montserrat", "sans-serif"],
+        montserrat: ["Montserrat"],
+        lato: ["Lato"],
+        garamond: ["Garamond"],
       },
     },
   },
   plugins: [],
 };
+
