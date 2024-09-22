@@ -1,86 +1,49 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
-import dummy from "../../public/Dummy.jpg";
-import "@splidejs/splide/dist/css/splide.min.css";
-import "@splidejs/react-splide/css";
-import "../index.css"
+import React from 'react';
 
-function About() {
+const About = () => {
     return (
-        <div className="flex flex-col mx-auto">
-            <div className="text-[#f9f6f0] p-4 flex flex-col mx-4 my-2 items-center">
-                <div className="w-3/4 my-4">
-                    <Splide
-                        options={{
-                            type: 'loop',
-                            perPage: 3,
-                            gap: 8,
-                            autoScroll: {
-                                pauseOnHover: false,
-                                pauseOnFocus: false,
-                                rewind: false,
-                                speed: 1,
-                            },
-                        }}
-                        extensions={{ AutoScroll }}
-                    >
-                        <SplideSlide>
-                            <img src={dummy} alt="Image 1" />
-                        </SplideSlide>
-                        <SplideSlide>
-                            <img src={dummy} alt="Image 2" />
-                        </SplideSlide>
-                        <SplideSlide>
-                            <img src={dummy} alt="Image 3" />
-                        </SplideSlide>
-                        <SplideSlide>
-                            <img src={dummy} alt="Image 4" />
-                        </SplideSlide>
-                    </Splide>
-                </div>
+        <div className="text-center py-10 bg-[#FFF45D]">
+            <h1 className="text-4xl font-bold mb-4">ABOUT</h1>
+            <div className="flex justify-center items-center mb-8">
+                <hr className="w-1/4 border-t-2 border-black" />
+                <span className="mx-4 text-2xl">✦</span>
+                <hr className="w-1/4 border-t-2 border-black" />
             </div>
-            <div className="grid grid-cols-5">
-                <img src={dummy} alt="Image 1" className="col-span-2 mx-4 p-4 "/>
-                <div className="rounded-xl text-[#f9f6f0] p-4 col-span-3 flex flex-col m-4">
-                    <span className="text-4xl font-bold font-serif mx-auto">About Us</span>
-                    <br />
-                    <span className="text-lg font-sans mx-20">
-                        Lorem ipsum dolor sit amet, sea pertinax pertinacia appellantur in,
-                        est ad esse assentior mediocritatem, magna populo menandri cum te.
-                        Vel augue menandri eu, at integre appareat splendide duo. Est ne
-                        tollit ullamcorper, eu pro falli diceret perpetua, sea ferri numquam
-                        legendos ut. Diceret suscipiantur at nec, his ei nulla mentitum
-                        efficiantur. Errem saepe ei vis. Per melius aperiri eu. Et
-                        interesset philosophia vim, graece denique intellegam duo at, te vix
-                        quot apeirian dignissim. Ei essent percipitur nam, natum possit
-                        interpretaris sea ea. Cum assum adipisci cotidieque ut, ut veri
-                        tollit duo. Erat idque volutpat mea ut, mel nominati splendide
-                        vulputate ea.
-                    </span>
-                </div>
-            </div>
-            <div className="rounded-xl text-[#f9f6f0] p-4 flex flex-col m-4">
-                <span className="text-4xl font-bold font-serif mx-auto mb-4">Events</span>
-                <div className="flex flex-col gap-4 mx-auto items-center">
-                    <div className="flex flex-row gap-4">
-                        <img src={dummy} alt="Image 1" className="max-w-80 h-auto object-cover ring-1 ring-[#f5d3b3] rounded-lg"/>
-                        <img src={dummy} alt="Image 2" className="max-w-80 h-auto object-cover ring-1 ring-[#f5d3b3] rounded-lg"/>
-                    </div>
+        </div>
+    );
+};
 
-                    <div className="flex flex-row gap-4">
-                        <img src={dummy} alt="Image 3" className="max-w-80 h-auto object-cover ring-1 ring-[#f5d3b3] rounded-lg"/>
-                        <img src={dummy} alt="Image 4" className="max-w-80 h-auto object-cover ring-1 ring-[#f5d3b3] rounded-lg m-2"/>
-                        <img src={dummy} alt="Image 5" className="max-w-80 h-auto object-cover ring-1 ring-[#f5d3b3] rounded-lg"/>
+const PrayasInfo = () => {
+    return (
+        <div className="bg-[#f0ead6] py-10">
+            <div className="container mx-auto px-4">
+                <div className="flex flex-col md:flex-row items-center justify-center">
+                    <div className="md:w-1/2 mb-6 md:mb-0">
+                        <img src="../../public/Frame 27.png" alt="Prayas RDC 2024-25" className="w-full max-w-md mx-auto" />
                     </div>
-
-                    <div className="flex flex-row gap-4">
-                        <img src={dummy} alt="Image 6" className="max-w-80 h-auto object-cover ring-1 ring-[#f5d3b3] rounded-lg"/>
-                        <img src={dummy} alt="Image 7" className="max-w-80 h-auto object-cover ring-1 ring-[#f5d3b3] rounded-lg"/>
+                    <div className="md:w-1/2 md:pl-8">
+                        <h2 className="text-3xl font-bold mb-4">PRAYAS RDC</h2>
+                        <p className="mb-4">
+                            Prayas, a student-led initiative at IIT Hyderabad, is dedicated to empowering rural children from government schools and orphanages through education and mentorship. The club bridges educational gaps by providing academic support, essential resources, and personal guidance to help children achieve their dreams.
+                        </p>
+                        <p>
+                            Prayas fosters holistic development through activities like yoga sessions for physical and emotional well-being, as well as campus tours to inspire academic aspirations. By offering targeted teaching and competitive exam guidance, Prayas equips underprivileged children with the tools they need to pursue a brighter future and reach their full potential.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     );
-}
+};
 
-export default About;
+const Home = () => {
+    return (
+        <div>
+            <About />
+            <PrayasInfo />
+            {/* Other sections of your Home component */}
+        </div>
+    );
+};
+
+export default Home;
