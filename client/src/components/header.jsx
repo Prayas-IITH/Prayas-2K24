@@ -13,7 +13,7 @@ function Navbar() {
   ];
 
   return (
-    <div className="flex flex-row justify-between px-4 mx-5 mb-5 rounded-lg text-[#F5DEB3] h-full">
+    <div className="flex flex-row justify-between px-4 mx-5 mb-5 rounded-lg text-gray-500 h-full">
       <div className="flex flex-row gap-4 lg:gap-8 items-center justify-start font-montserrat">
         {navItems.slice(0, 3).map((item) => (
           <NavLink
@@ -22,7 +22,7 @@ function Navbar() {
             className={({ isActive }) =>
               `text-sm px-1 transition-all duration-300 rounded ${
                 isActive
-                  ? "bg-no-repeat bg-center bg-contain text-white scale-105"
+                  ? "bg-no-repeat bg-center bg-contain scale-x-125 text-white scale-105"
                   : "hover:text-yellow-400 scale-100"
               }`
             }
