@@ -1,4 +1,9 @@
 function Donate() {
+  const handleDonateClick = () => {
+    // Open the form in a new tab
+    window.open("https://forms.gle/6UDi23hLfhh4a3z78", "_blank");
+  };
+
   return (
     <div className="relative flex flex-col items-center justify-center h-screen px-8 py-16 bg-gray-50">
       {/* Outer yellow box */}
@@ -49,7 +54,15 @@ function Donate() {
                          md:text-xl 
                          lg:text-2xl"
         >
-          <button>DONATE ITEMS</button>
+          <button
+            onClick={handleDonateClick}
+            className="[font-family:'Montserrat-Medium',Helvetica] font-medium text-2xl tracking-[4.32px] 
+                         sm:text-lg 
+                         md:text-xl 
+                         lg:text-2xl"
+          >
+            DONATE ITEMS
+          </button>
         </span>
       </div>
 

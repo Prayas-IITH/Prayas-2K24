@@ -18,7 +18,13 @@ function App() {
   return (
     <div className="select-none app flex flex-col bg-[#FFF5D4] min-h-screen">
       <Navbar />
-      <div className="flex flex-col items-center flex-grow">
+      <div
+        className="flex flex-col items-center flex-grow bg-[#FFF5D4] bg-repeat bg-top"
+        style={{
+          backgroundImage: `url('/public/bg.png')`,
+          backgroundBlendMode: "overlay",
+        }}
+      >
         <Routes location={location} key={location.key}>
           <Route path="/" element={<About />} />
           <Route path="/announcements" element={<Announcements />} />
