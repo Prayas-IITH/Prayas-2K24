@@ -8,7 +8,7 @@ function Announcements() {
 
   useEffect(() => {
     fetchData();
-  })
+  });
   const fetchData = async () => {
     const sheetId = import.meta.env.VITE_SHEETS_ID;
     const apiKey = import.meta.env.VITE_API_KEY;
@@ -37,16 +37,13 @@ function Announcements() {
 
   return (
     <div className="flex flex-col min-h-screen p-4">
-      <div className="text-3xl font-light tracking-widest w-full text-center mb-4 font-montserrat">
+      <div className="text-4xl font-light tracking-widest w-full text-center mb-4 font-montserrat">
         A N N O U N C E M E N T S
       </div>
       <img src={line} alt="line" className="mx-auto w-fit scale-x-[0.6] mb-8" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
         {events.map((item, index) => (
-          <AnnouncementsCard
-            key={index}
-            data={item}
-          />
+          <AnnouncementsCard key={index} data={item} />
         ))}
       </div>
     </div>

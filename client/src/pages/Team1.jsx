@@ -25,11 +25,9 @@ const Team1 = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-screen">
-      <div className="flex items-center justify-center h-4/5 w-full my-6">
-        <p className="z-10 text-black font-Montserrat text-center text-xl sm:text-3xl lg:text-3xl">
-          TEAM
-        </p>
+    <div className="w-full min-h-screen font-montserrat">
+      <div className="flex items-center justify-center h-4/5 w-full my-6 z-10 tracking-widest text-2xl sm:text-4xl lg:text-4xl">
+        T E A M
       </div>
 
       {/* Divider Image */}
@@ -37,7 +35,7 @@ const Team1 = () => {
         <img src={DividerImage} alt="Divider" className="w-auto h-8 md:h-8" />
       </div>
 
-      <div className="flex items-center justify-center text-md lg:text-xl my-3">
+      <div className="flex items-center justify-center text-md lg:text-xl my-3 tracking-widest">
         OVERALL COORDINATORS
       </div>
       <div className="flex items-center justify-center my-6 md:my-10">
@@ -62,10 +60,8 @@ const Team1 = () => {
           key={team.name}
           className="flex flex-col items-center justify-center"
         >
-          <div className="relative flex items-center justify-center h-4/5 w-full my-6">
-            <p className="relative z-10 text-black font-Montserrat text-center text-xl sm:text-3xl lg:text-3xl">
-              {team.name}
-            </p>
+          <div className="relative flex items-center justify-center h-4/5 w-full my-6 z-10 tracking-widest text-xl sm:text-3xl lg:text-3xl">
+            {team.name}
           </div>
 
           {/* Divider Image */}
@@ -77,8 +73,8 @@ const Team1 = () => {
             />
           </div>
 
-          <div className="flex items-center justify-center text-md lg:text-xl my-3">
-            HEAD
+          <div className="flex items-center justify-center text-md lg:text-xl my-3 tracking-widest">
+            H E A D
           </div>
 
           <div className="flex items-center justify-center my-6 md:my-10">
@@ -99,8 +95,8 @@ const Team1 = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-center text-md lg:text-xl my-3">
-            COORDINATORS
+          <div className="flex items-center justify-center text-md lg:text-xl my-3 tracking-widest">
+            C O O R D I N A T O R S
           </div>
 
           <div className="flex items-center justify-center my-6 md:my-10">
@@ -123,10 +119,8 @@ const Team1 = () => {
         </div>
       ))}
 
-      <div className="flex items-center justify-center h-4/5 w-full my-6">
-        <p className="z-10 text-black font-Montserrat text-center text-xl sm:text-3xl lg:text-3xl">
-          MENTORS
-        </p>
+      <div className="flex items-center justify-center h-4/5 w-full my-6 tracking-widest z-10 text-xl sm:text-3xl lg:text-3xl">
+        M E N T O R S
       </div>
 
       {/* Divider Image */}

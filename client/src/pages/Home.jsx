@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="text-center py-10 ">
-      <h1 className="text-4xl font-bold mb-4">ABOUT</h1>
+      <h1 className="text-4xl mb-4 tracking-widest">A B O U T</h1>
       <div className="flex justify-center items-center mb-8">
         <hr className="w-1/4 border-t-2 border-black" />
         <span className="mx-4 text-2xl">✦</span>
@@ -63,7 +63,7 @@ const PrayasInfo = () => {
 
 const Home = () => {
   return (
-    <div>
+    <div className="font-montserrat">
       <About />
       <PrayasInfo />
     </div>

@@ -74,17 +74,17 @@ function Navbar() {
             key={item.to}
             to={item.to}
             className={({ isActive }) =>
-              `text-2xl md:text-3xl px-4 py-2 text-white transition-all duration-300 ${
+              `my-5 px-4 py-2 transition-all duration-300 ${
                 isActive
-                  ? "bg-no-repeat bg-center bg-contain text-yellow-400 scale-110"
-                  : "hover:text-yellow-400"
+                  ? "bg-no-repeat bg-center bg-contain text-white scale-110 text-xl font-semibold"
+                  : "text-gray-700 hover:text-gray-300 text-2xl"
               }`
             }
             style={({ isActive }) =>
               isActive
                 ? {
                     backgroundImage: `url(${activeBg})`,
-                    width: "clamp(8rem, 12vw, 10rem)",
+                    width: "clamp(13rem, 15vw, 16rem)",
                     height: "clamp(3rem, 5vw, 4rem)",
                     display: "flex",
                     justifyContent: "center",
@@ -117,7 +117,7 @@ function Navbar() {
                 isActive
                   ? {
                       backgroundImage: `url(${activeBg})`,
-                      width: "clamp(5rem, 8vw, 6.5rem)",
+                      width: "clamp(5rem, 15vw, 8rem)",
                       height: "clamp(2rem, 3vw, 2.5rem)",
                       display: "flex",
                       justifyContent: "center",
@@ -165,7 +165,7 @@ function Navbar() {
                 isActive
                   ? {
                       backgroundImage: `url(${activeBg})`,
-                      width: "clamp(5rem, 8vw, 6.5rem)",
+                      width: "clamp(5rem, 15vw, 10rem)",
                       height: "clamp(2rem, 3vw, 2.5rem)",
                       display: "flex",
                       justifyContent: "center",

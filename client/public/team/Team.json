@@ -14,7 +14,7 @@
 
   "teams": [
     {
-      "name": "Logistics",
+      "name": "LOGISTICS",
       "heads": [
         {
           "name": "Parvez",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "name": "PR Outreach",
+      "name": "PR OUTREACH",
       "heads": [
         {
           "name": "Vinay",
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "name": "Finance",
+      "name": "FINANCE",
       "heads": [
         {
           "name": "Avantika",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "name": "Multimedia Design",
+      "name": "MULTIMEDIA DESIGN",
       "heads": [
         {
           "name": "Abhishek",
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "name": "Web",
+      "name": "WEB",
       "heads": [
         {
           "name": "Tejasri",
@@ -171,7 +171,7 @@
       ]
     },
     {
-      "name": "Events",
+      "name": "EVENTS",
       "heads": [
         {
           "name": "Archana",

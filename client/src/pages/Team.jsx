@@ -61,7 +61,7 @@ function Team() {
           className="flex flex-col items-center justify-center"
         >
           <div className="relative flex items-center justify-center h-4/5 w-screen my-10 md:my-16">
-            <p className="relative z-10 text-black font-Montserrat text-center text-xl sm:text-3xl lg:text-3xl">
+            <p className="relative z-10 text-black text-center text-xl sm:text-3xl lg:text-3xl">
               {team.name}
             </p>
           </div>

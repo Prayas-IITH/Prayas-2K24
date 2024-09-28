@@ -72,8 +72,8 @@ const Competitions = () => {
   const [currentFinishedEvent, setCurrentFinishedEvent] = useState(0);
 
   return (
-    <div className="text-center py-10">
-      <h1 className="text-4xl font-bold mb-4">COMPETITIONS</h1>
+    <div className="text-center py-10 font-montserrat">
+      <h1 className="text-4xl mb-4 tracking-widest">C O M P E T I T I O N S</h1>
       <div className="flex justify-center items-center mb-8">
         <hr className="w-1/4 border-t-2 border-black" />
         <span className="mx-4 text-2xl">✦</span>
@@ -83,21 +83,21 @@ const Competitions = () => {
       {/* Upcoming Events Section */}
       <div className="flex justify-center items-center mb-8">
         <span className="text-2xl">✦</span>
-        <h2 className="text-2xl font-semibold mx-4">UPCOMING EVENTS</h2>
+        <h2 className="text-2xl mx-4 tracking-widest">UPCOMING EVENTS</h2>
         <span className="text-2xl">✦</span>
       </div>
       <div className="flex justify-center items-stretch mb-16">
         <div
-          className="bg-black p-6 rounded-lg shadow-lg w-3/5 flex flex-col justify-between"
+          className="p-6 rounded-lg shadow-lg w-3/5 flex flex-col justify-between"
           style={{
             backgroundImage: `url(${backgroundImage})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 0.7,
+            backgroundBlendMode: "overlay",
           }}
         >
           <div>
-            <h3 className="text-xl font-bold mb-2 text-left text-white">
+            <h3 className="text-3xl font-bold mb-2 text-left text-white">
               {upcomingEventsData[currentUpcomingEvent].title}
             </h3>
             <p className="text-sm mb-4 text-white text-left font-bold">
@@ -129,7 +129,7 @@ const Competitions = () => {
       {/* Previous Events Section */}
       <div className="flex justify-center items-center mb-8">
         <span className="text-2xl">✦</span>
-        <h2 className="text-2xl font-semibold mx-4">PREVIOUS EVENTS</h2>
+        <h2 className="text-2xl mx-4 tracking-widest">PREVIOUS EVENTS</h2>
         <span className="text-2xl">✦</span>
       </div>
       <div className="flex justify-center items-stretch">
@@ -155,11 +155,11 @@ const Competitions = () => {
             backgroundImage: `url(${backgroundImage})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 0.7,
+            backgroundBlendMode: "overlay",
           }}
         >
           <div>
-            <h3 className="text-xl text-left font-bold mb-2 text-white">
+            <h3 className="text-3xl text-left font-bold mb-2 text-white">
               {finishedEventsData[currentFinishedEvent].title}
             </h3>
             <p className="text-md mb-4 text-left text-white font-bold">
