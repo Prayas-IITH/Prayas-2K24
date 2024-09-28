@@ -1,17 +1,39 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import AnnouncementsCard from "../components/AnnouncementCard";
-import dummy from "../../public/Dummy.jpg";
 import line from "../../public/line.png";
 
 function Announcements() {
-  const data = [
-    {
-      title: "School visit",
-      photo: "../../public/School_Visit_21_09.jpg",
-      date: "9/21/2024",
-      time: "10:00:00 AM",
-      venue: "Kandi",
-    },
-  ];
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  })
+  const fetchData = async () => {
+    const sheetId = import.meta.env.VITE_SHEETS_ID;
+    const apiKey = import.meta.env.VITE_API_KEY;
+    const range = import.meta.env.VITE_RANGE;
+
+    try {
+      const response = await axios.get(
+        `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`
+      );
+      const rows = response.data.values;
+
+      if (rows.length) {
+        const formattedEvents = rows.slice(1).map((row) => ({
+          title: row[0],
+          date: row[1],
+          time: row[2],
+          venue: row[3],
+          photo: row[5],
+        }));
+        setEvents(formattedEvents);
+      }
+    } catch (error) {
+      console.error("Error fetching data from Google Sheets", error);
+    }
+  };
 
   return (
     <div className="flex flex-col min-h-screen p-4">
@@ -20,14 +42,10 @@ function Announcements() {
       </div>
       <img src={line} alt="line" className="mx-auto w-fit scale-x-[0.6] mb-8" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-        {data.map((item, index) => (
+        {events.map((item, index) => (
           <AnnouncementsCard
             key={index}
-            title={item.title}
-            photo={item.photo}
-            date={item.date}
-            time={item.time}
-            venue={item.venue}
+            data={item}
           />
         ))}
       </div>
