@@ -4,7 +4,7 @@ import About from "./pages/Home";
 import Announcements from "./pages/Announcements";
 import Competitions from "./pages/Competitions";
 import Gallery from "./pages/Gallery";
-import Team from "./pages/Team";
+import Team1 from "./pages/Team1";
 import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
@@ -24,7 +24,7 @@ function App() {
           <Route path="/announcements" element={<Announcements />} />
           <Route path="/competitions" element={<Competitions />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/team" element={<Team />} />
+          <Route path="/team" element={<Team1 />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />

@@ -1,13 +1,13 @@
 {
   "overallHeads": [
     {
-      "name": "Gayatri Priya",
-      "image": "",
-      "designation": "Prayas Head"
+      "name": "Gayatri",
+      "image": "/team/Heads/Gayatri.jpg",
+      "designation": "Prayas OC"
     },
     {
-      "name": "Naresh Rathod",
-      "image": "",
+      "name": "Naresh",
+      "image": "/team/Heads/Naresh.jpg",
       "designation": "RDC Head"
     }
   ],
@@ -17,25 +17,25 @@
       "name": "Logistics",
       "heads": [
         {
-          "name": "Shaik P Parvez",
+          "name": "Parvez",
           "image": "/team/Heads/Shaik P Parvez.jpeg",
           "designation": "Head of Logistics"
         }
       ],
       "coords": [
         {
-          "name": "Omkar Nilkanth",
-          "image": "/team/Heads/vinay.jpg",
+          "name": "Omkar",
+          "image": "/team/Heads/Omkar.jpg",
           "designation": "Coordinator of Logistics"
         },
         {
-          "name": "Mohit Borse",
-          "image": "/team/Coords/Sameer Mirza.png",
+          "name": "Mohit",
+          "image": "/team/Coords/Mohit.jpeg",
           "designation": "Coordinator of Logistics"
         },
         {
-          "name": "Pratyushee Ghosh",
-          "image": "/team/Coords/Aashna Sahu.png",
+          "name": "Pratyushee",
+          "image": "/team/Coords/Pratyushee.jpg",
           "designation": "Coordinator of Logistics"
         }
       ]
@@ -45,24 +45,24 @@
       "heads": [
         {
           "name": "Vinay",
-          "image": "/team/Heads/vinay.jpg",
+          "image": "/team/Heads/Vinay.jpg",
           "designation": "Head of PR Outreach"
         }
       ],
       "coords": [
         {
-          "name": "Sneha Das",
-          "image": "/TEAM/Coords/Prudhvi Raj.png",
+          "name": "Sneha",
+          "image": "/team/Coords/Sneha.jpg",
           "designation": "Coordinator of PR Outreach"
         },
         {
-          "name": "Sukesh Kumar",
-          "image": "/TEAM/Coords/Sameer Mirza.png",
+          "name": "Sukesh",
+          "image": "/team/Coords/Sukesh.png",
           "designation": "Coordinator of PR Outreach"
         },
         {
-          "name": "Sri Nithya S",
-          "image": "/TEAM/Coords/Aashna Sahu.png",
+          "name": "Nithya",
+          "image": "/team/Coords/Nithya.jpg",
           "designation": "Coordinator of PR Outreach"
         }
       ]
@@ -72,24 +72,24 @@
       "heads": [
         {
           "name": "Avantika",
-          "image": "/team/Heads/avantika.jpg",
+          "image": "/team/Heads/Avantika.jpg",
           "designation": "Head of Finance"
         }
       ],
       "coords": [
         {
           "name": "Amit Vikram",
-          "image": "/TEAM/Heads/vinay.jpg",
+          "image": "/team/Coords/Vikram.jpg",
           "designation": "Coordinator of Finance"
         },
         {
-          "name": "Aryan Bubna",
-          "image": "/TEAM/Coords/Sameer Mirza.png",
+          "name": "Aryan",
+          "image": "/team/Coords/Aryan.jpg",
           "designation": "Coordinator of Finance"
         },
         {
           "name": "Abhinav",
-          "image": "/TEAM/Coords/Aashna Sahu.png",
+          "image": "/team/Coords/Abhinav.jpeg",
           "designation": "Coordinator of Finance"
         }
       ]
@@ -99,24 +99,19 @@
       "heads": [
         {
           "name": "Abhishek",
-          "image": "/team/Heads/abhishek.jpg",
+          "image": "/team/Heads/Abhishek.jpg",
           "designation": "Head of Multimedia Design"
         }
       ],
       "coords": [
         {
-          "name": "C.Rachana",
-          "image": "/TEAM/Coords/Prudhvi Raj.png",
+          "name": "Annant",
+          "image": "/team/Coords/Annant.jpg",
           "designation": "Coordinator of Multimedia Design"
         },
         {
-          "name": "Annant Pathak",
-          "image": "/TEAM/Coords/Sameer Mirza.png",
-          "designation": "Coordinator of Multimedia Design"
-        },
-        {
-          "name": "Aishwarya Nambiar",
-          "image": "/TEAM/Coords/Aashna Sahu.png",
+          "name": "Aishwarya",
+          "image": "/team/Coords/Aashna Sahu.png",
           "designation": "Coordinator of Multimedia Design"
         }
       ]
@@ -125,25 +120,25 @@
       "name": "VCU",
       "heads": [
         {
-          "name": "Harshitha Chanchal",
+          "name": "Harshitha",
           "image": "/team/Heads/Harshita Chanchal.jpg",
           "designation": "Head of VCU"
         }
       ],
       "coords": [
         {
-          "name": "Sai Rishi Kasturi",
-          "image": "/TEAM/Coords/Prudhvi Raj.png",
+          "name": "Rishi",
+          "image": "/team/Coords/Rishi.jpg",
           "designation": "Coordinator of VCU"
         },
         {
-          "name": "Achal Singh",
-          "image": "/TEAM/Coords/Sameer Mirza.png",
+          "name": "Achal",
+          "image": "/team/Coords/Achal.jpg",
           "designation": "Coordinator of VCU"
         },
         {
-          "name": "Prince Verma",
-          "image": "/TEAM/Coords/Aashna Sahu.png",
+          "name": "Prince",
+          "image": "/team/Coords/Prince Verma.jpg",
           "designation": "Coordinator of VCU"
         }
       ]
@@ -153,29 +148,24 @@
       "heads": [
         {
           "name": "Tejasri",
-          "image": "/team/Heads/tejasri.jpg",
+          "image": "/team/Heads/Tejasri.jpg",
           "designation": "Head of Web Development"
         }
       ],
       "coords": [
         {
-          "name": "Sathwik Kodamarthi",
-          "image": "/TEAM/Coords/Prudhvi Raj.png",
+          "name": "Sathwik",
+          "image": "/team/Coords/Prudhvi Raj.png",
           "designation": "Coordinator of Web Development"
         },
         {
-          "name": "Praneeth Chamarthy",
-          "image": "/TEAM/Coords/Sameer Mirza.png",
+          "name": "Praneeth",
+          "image": "/team/Coords/Praneeth.jpg",
           "designation": "Coordinator of Web Development"
         },
         {
           "name": "Naishadha",
-          "image": "/TEAM/Coords/Aashna Sahu.png",
-          "designation": "Coordinator of Web Development"
-        },
-        {
-          "name": "Sai Chandan",
-          "image": "/TEAM/Coords/Aashna Sahu.png",
+          "image": "/team/Coords/Naishadha.jpg",
           "designation": "Coordinator of Web Development"
         }
       ]
@@ -191,21 +181,38 @@
       ],
       "coords": [
         {
-          "name": "Deddepya",
-          "image": "/TEAM/Coords/Prudhvi Raj.png",
+          "name": "Deddeepya",
+          "image": "/team/Coords/Deddeepya.jpg",
           "designation": "Coordinator of Events"
         },
         {
           "name": "Sahasra",
-          "image": "/TEAM/Coords/Sameer Mirza.png",
+          "image": "/team/Coords/Sahasra.jpg",
           "designation": "Coordinator of Events"
         },
         {
           "name": "Pritesh",
-          "image": "/TEAM/Coords/Aashna Sahu.png",
+          "image": "/team/Coords/Pritesh Singh.jpg",
           "designation": "Coordinator of Events"
         }
       ]
+    }
+  ],
+  "mentors": [
+    {
+      "name": "Sai Kiran",
+      "image": "/team/Mentors/Sai Kiran.jpg",
+      "designation": "Mentor"
+    },
+    {
+      "name": "Vikram",
+      "image": "/team/Mentors/Vikram.jpg",
+      "designation": "Mentor"
+    },
+    {
+      "name": "Uday",
+      "image": "/team/Mentors/Uday.jpg",
+      "designation": "Mentor"
     }
   ]
 }
