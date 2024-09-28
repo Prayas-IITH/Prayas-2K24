@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Header from "../assets/Header.png";
 import activeBg from "../assets/ActivePage.png";
+import Logo from "../assets/Logo.png"; // Import your logo
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   const navItems = [
     { to: "/gallery", label: "GALLERY" },
     { to: "/competitions", label: "COMPETITIONS" },
@@ -12,84 +16,168 @@ function Navbar() {
     { to: "/", label: "ABOUT" },
   ];
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="flex flex-row justify-between px-4 mx-5 mb-5 rounded-lg text-gray-500 h-full">
-      <div className="flex flex-row gap-4 lg:gap-8 items-center justify-start font-montserrat">
-        {navItems.slice(0, 3).map((item) => (
-          <NavLink
-            key={item.to}
-            to={item.to}
-            className={({ isActive }) =>
-              `text-sm px-1 transition-all duration-300 rounded ${
-                isActive
-                  ? "bg-no-repeat bg-center bg-contain scale-x-125 text-white scale-105"
-                  : "hover:text-yellow-400 scale-100"
-              }`
-            }
-            style={({ isActive }) =>
-              isActive
-                ? {
-                    backgroundImage: `url(${activeBg})`,
-                    width: "clamp(5rem, 8vw, 6.5rem)",
-                    height: "clamp(2rem, 3vw, 2.5rem)",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }
-                : {}
-            }
+    <div className="relative flex flex-col lg:flex-row justify-between px-4 mx-5 mb-5 rounded-lg text-gray-500 h-full">
+      {/* Hamburger Button for Mobile */}
+      <div className="lg:hidden flex justify-between items-center w-full">
+        <div className="flex items-center justify-center text-center">
+          {/* Display logo and "PRAYAS" on mobile */}
+          <img
+            src={Logo}
+            alt="Logo"
+            className="w-8 h-8 mr-2" // Adjust the size of the logo
+          />
+          <p className="text-2xl font-semibold text-[#000000] font-sans">
+            PRAYAS
+          </p>
+        </div>
+        <button
+          className="text-gray-500 focus:outline-none focus:text-yellow-400"
+          onClick={toggleMenu}
+        >
+          {/* Hamburger Icon */}
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            {item.label}
-          </NavLink>
-        ))}
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
       </div>
 
+      {/* Fullscreen Dropdown Overlay */}
       <div
-        className="flex flex-col items-center bg-cover bg-no-repeat justify-center text-center"
-        style={{
-          backgroundImage: `url(${Header})`,
-          backgroundSize: "cover",
-          backgroundPosition: "bottom center",
-          height: "130px",
-          width: "450px",
-        }}
+        className={`${
+          isOpen ? "flex" : "hidden"
+        } fixed inset-0 bg-[#f1ca57] z-50 flex-col items-center justify-center`}
       >
-        <p className="text-2xl lg:text-5xl font-semibold text-[#000000] font-sans">
-          PRAYAS
-        </p>
-        <p className="text-lg lg:text-2xl tracking-[.8em] mt-2 mb-5 text-[#000000] font-sans">
-          IITH
-        </p>
-      </div>
-
-      <div className="flex flex-row gap-4 lg:gap-8 items-center font-montserrat justify-end">
-        {navItems.slice(3).map((item) => (
+        <button
+          className="absolute top-5 right-5 text-white text-3xl"
+          onClick={toggleMenu}
+        >
+          &times; {/* Close Icon */}
+        </button>
+        {navItems.map((item) => (
           <NavLink
             key={item.to}
             to={item.to}
             className={({ isActive }) =>
-              `text-sm px-1 transition-all duration-300 rounded ${
+              `text-2xl md:text-3xl px-4 py-2 text-white transition-all duration-300 ${
                 isActive
-                  ? "bg-no-repeat bg-center bg-contain text-white scale-105"
-                  : "hover:text-yellow-400 scale-100"
+                  ? "bg-no-repeat bg-center bg-contain text-yellow-400 scale-110"
+                  : "hover:text-yellow-400"
               }`
             }
             style={({ isActive }) =>
               isActive
                 ? {
                     backgroundImage: `url(${activeBg})`,
-                    width: "clamp(5rem, 8vw, 6.5rem)",
-                    height: "clamp(2rem, 3vw, 2.5rem)",
+                    width: "clamp(8rem, 12vw, 10rem)",
+                    height: "clamp(3rem, 5vw, 4rem)",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
                   }
                 : {}
             }
+            onClick={toggleMenu} // Close menu when an item is clicked
           >
             {item.label}
           </NavLink>
         ))}
+      </div>
+
+      {/* Nav Items for Desktop */}
+      <div className="hidden lg:flex flex-col lg:flex-row gap-4 lg:gap-8 items-center lg:items-center lg:justify-between w-full font-montserrat">
+        <div className="flex flex-row gap-4 lg:gap-8 items-center justify-start font-montserrat">
+          {navItems.slice(0, 3).map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              className={({ isActive }) =>
+                `text-sm px-1 transition-all duration-300 rounded ${
+                  isActive
+                    ? "bg-no-repeat bg-center bg-contain scale-x-125 text-white scale-105"
+                    : "hover:text-yellow-400 scale-100"
+                }`
+              }
+              style={({ isActive }) =>
+                isActive
+                  ? {
+                      backgroundImage: `url(${activeBg})`,
+                      width: "clamp(5rem, 8vw, 6.5rem)",
+                      height: "clamp(2rem, 3vw, 2.5rem)",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }
+                  : {}
+              }
+            >
+              {item.label}
+            </NavLink>
+          ))}
+        </div>
+
+        <div
+          className="hidden lg:flex flex-col items-center bg-cover bg-no-repeat justify-center text-center"
+          style={{
+            backgroundImage: `url(${Header})`,
+            backgroundSize: "cover",
+            backgroundPosition: "bottom center",
+            height: "130px",
+            width: "450px",
+          }}
+        >
+          <p className="text-2xl lg:text-5xl font-semibold text-[#000000] font-sans">
+            PRAYAS
+          </p>
+          <p className="text-lg lg:text-2xl tracking-[.8em] mt-2 mb-5 text-[#000000] font-sans">
+            IITH
+          </p>
+        </div>
+
+        <div className="flex flex-row gap-4 lg:gap-8 items-center font-montserrat justify-end">
+          {navItems.slice(3).map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              className={({ isActive }) =>
+                `text-sm px-1 transition-all duration-300 rounded ${
+                  isActive
+                    ? "bg-no-repeat bg-center bg-contain text-white scale-105"
+                    : "hover:text-yellow-400 scale-100"
+                }`
+              }
+              style={({ isActive }) =>
+                isActive
+                  ? {
+                      backgroundImage: `url(${activeBg})`,
+                      width: "clamp(5rem, 8vw, 6.5rem)",
+                      height: "clamp(2rem, 3vw, 2.5rem)",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }
+                  : {}
+              }
+            >
+              {item.label}
+            </NavLink>
+          ))}
+        </div>
       </div>
     </div>
   );
