@@ -1,4 +1,4 @@
-function GalleryCard({ title, data, index }) {
+function GalleryCard({ title, description,data, index }) {
   return (
     <div className="flex flex-col w-full max-w-[800px] mx-auto px-4">
       <div className="text-2xl font-light tracking-widest w-full text-center m-4 font-montserrat mx-auto">
@@ -24,7 +24,7 @@ function GalleryCard({ title, data, index }) {
           </div>
 
           <div className="text-md text-gray-700 font-light overflow-auto">
-            {data.description}
+            {description}
           </div>
         </div>
       </div>
