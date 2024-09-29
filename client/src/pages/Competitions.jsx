@@ -73,7 +73,9 @@ const Competitions = () => {
 
   return (
     <div className="text-center py-10 font-montserrat">
-      <h1 className="text-4xl mb-4 tracking-widest">C O M P E T I T I O N S</h1>
+      <h1 className="text-2xl sm:text-3xl lg:text-4xl mb-4 tracking-widest">
+        C O M P E T I T I O N S
+      </h1>
       <div className="flex justify-center items-center mb-8">
         <hr className="w-1/4 border-t-2 border-black" />
         <span className="mx-4 text-2xl">✦</span>

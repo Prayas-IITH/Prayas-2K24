@@ -37,7 +37,7 @@ function Announcements() {
 
   return (
     <div className="flex flex-col min-h-screen p-4">
-      <div className="text-4xl font-light tracking-widest w-full text-center mb-4 font-montserrat">
+      <div className="text-xl sm:text-3xl lg:text-4xl font-light tracking-widest w-full text-center mb-4 font-montserrat">
         A N N O U N C E M E N T S
       </div>
       <img src={line} alt="line" className="mx-auto w-fit scale-x-[0.6] mb-8" />

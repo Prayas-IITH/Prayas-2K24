@@ -51,13 +51,13 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center w-screen mt-4 min-h-screen">
-      <div className="text-4xl font-light tracking-widest w-full text-center font-montserrat mx-auto">
+    <div className="flex flex-col items-center w-full mt-4 min-h-screen">
+      <div className="text-2xl sm:text-3xl lg:text-4xl font-light tracking-widest w-full text-center font-montserrat mx-auto">
         G A L L E R Y
       </div>
       <img src={line} alt="line" className="mx-auto w-fit scale-x-[0.6] my-8" />
       {events.map((event, eventIndex) => (
-        <div key={eventIndex} className="w-screen mx-auto relative mb-8">
+        <div key={eventIndex} className="w-full mx-auto relative mb-8">
           <Splide
             options={{
               type: "loop",

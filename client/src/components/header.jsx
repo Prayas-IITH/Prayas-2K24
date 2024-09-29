@@ -31,7 +31,7 @@ function Navbar() {
             alt="Logo"
             className="w-8 h-8 mr-2" // Adjust the size of the logo
           />
-          <p className="text-2xl font-semibold text-[#000000] font-sans">
+          <p className="text-2xl font-semibold text-[#000000] font-sans tracking-widest">
             PRAYAS
           </p>
         </div>
@@ -132,7 +132,7 @@ function Navbar() {
         </div>
 
         <div
-          className="hidden lg:flex flex-col items-center bg-cover bg-no-repeat justify-center text-center"
+          className="hidden lg:flex flex-col items-center bg-cover bg-no-repeat justify-center text-center font-montserrat"
           style={{
             backgroundImage: `url(${Header})`,
             backgroundSize: "cover",
@@ -141,7 +141,7 @@ function Navbar() {
             width: "450px",
           }}
         >
-          <p className="text-2xl lg:text-5xl font-semibold text-[#000000] font-sans">
+          <p className="text-2xl lg:text-5xl font-semibold text-[#000000] font-sans tracking-widest">
             PRAYAS
           </p>
           <p className="text-lg lg:text-2xl tracking-[.8em] mt-2 mb-5 text-[#000000] font-sans">
