@@ -55,7 +55,11 @@ const Gallery = () => {
       <div className="text-2xl sm:text-3xl lg:text-4xl font-light tracking-widest w-full text-center font-montserrat mx-auto">
         G A L L E R Y
       </div>
-      <img src={line} alt="line" className="mx-auto w-fit scale-x-[0.6] my-8" />
+      <img
+        src={line}
+        alt="line"
+        className="mx-auto w-fit lg:scale-x-[0.6] my-8"
+      />
       {events.map((event, eventIndex) => (
         <div key={eventIndex} className="w-full mx-auto relative mb-8">
           <Splide

@@ -40,7 +40,7 @@ const PrayasInfo = () => {
       </div>
       <div className="flex flex-col lg:flex-row justify-center items-center p-4">
         <div className="flex flex-col lg:flex-row lg:bg-[#556B2F] items-center justify-center max-w-4xl w-full rounded-lg overflow-hidden">
-          <div className="w-full lg:w-1/2 bg-[#556B2F] p-6 rounded-lg text-white m-2">
+          <div className="w-full lg:w-1/2 bg-[#556B2F] p-6 rounded-lg text-white m-2 order-2 lg:order-1">
             <p className="text-lg lg:text-xl font-bold py-10">
               Prayas fosters holistic development through activities like yoga
               sessions for physical and emotional well-being, as well as campus
@@ -50,7 +50,7 @@ const PrayasInfo = () => {
               brighter future and reach their full potential.
             </p>
           </div>
-          <div className="w-full lg:w-1/2 bg-[#556B2F] rounded-l-2xl flex items-center m-2">
+          <div className="w-full lg:w-1/2 bg-[#556B2F] rounded-l-2xl flex items-center m-2 order-1 lg:order-2">
             <img
               src="../../public/Events/1.jpg"
               alt="Prayas RDC Illustration"
