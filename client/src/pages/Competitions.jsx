@@ -1,36 +1,46 @@
 import React, { useState } from "react";
 import backgroundImage from "../../public/Kids.jpeg"; // Adjust the path as needed
+import Drawing from "../../public/Events/20.jpg";
+import Sport from "../../public/Events/4.jpg";
+import Essay from "../../public/Events/7.jpg";
+import Dance from "../../public/Events/3.jpg";
+import ClayArt from "../../public/Events/8.jpg";
 
 const upcomingEventsData = [
   {
     id: 1,
     title: "PAINTING",
+    image: Drawing,
     description:
       "Unleash your inner artist! Join our painting competition and showcase your creativity. Use your imagination to bring your vision to life on canvas. Prizes will be awarded for the most captivating and original artwork.",
   },
   {
     id: 2,
     title: "SPORTS",
+    image: Sport,
     description:
       "Get ready to compete! Join us for an exciting sports tournament and test your athletic skills. Compete against fellow participants in your favorite sport and have a chance to win trophies and medals. Let's foster a spirit of sportsmanship and camaraderie.",
   },
   {
     id: 3,
     title: "ESSAY WRITING",
+    image: Essay,
     description:
       "Express your thoughts! Participate in our essay writing competition and share your unique perspective on a given topic. Impress the judges with your eloquence, creativity, and knowledge.",
   },
   {
     id: 4,
-    title: "MUSIC COMPETITION",
+    title: "CULTURALS",
+    image: Dance,
     description:
-      "A music competition where participants showcase their talent in singing, instrumental performance, and more. A stage for budding musicians!",
+      "A cultural competition where participants showcase their talent in singing, instrumental performance, and more. A stage for budding enthusiasts!",
   },
   {
     id: 5,
-    title: "PHOTOGRAPHY",
+    title: "CREATIVE ACTIVITIES",
+    image: ClayArt,
     description:
-      "Photography competition for aspiring photographers to capture the best moments. Themes will be given, and the best click wins!",
+      "Participate in our exciting creative activities competition and showcase your unique talents. Express your ideas through captivating stories, imaginative artwork, or innovative projects. Impress the judges with your originality, skill, and passion. Let your creativity soar!",
   },
 ];
 
@@ -38,38 +48,57 @@ const finishedEventsData = [
   {
     id: 1,
     title: "PAINTING",
+    image: Drawing,
     description:
       "Unleash your inner artist! Join our painting competition and showcase your creativity. Use your imagination to bring your vision to life on canvas. Prizes will be awarded for the most captivating and original artwork.",
   },
   {
     id: 2,
     title: "SPORTS",
+    image: Sport,
     description:
       "Get ready to compete! Join us for an exciting sports tournament and test your athletic skills. Compete against fellow participants in your favorite sport and have a chance to win trophies and medals. Let's foster a spirit of sportsmanship and camaraderie.",
   },
   {
     id: 3,
     title: "ESSAY WRITING",
+    image: Essay,
     description:
       "Express your thoughts! Participate in our essay writing competition and share your unique perspective on a given topic. Impress the judges with your eloquence, creativity, and knowledge.",
   },
   {
     id: 4,
-    title: "MUSIC COMPETITION",
+    title: "CULTURALS",
+    image: Dance,
     description:
-      "A music competition where participants showcase their talent in singing, instrumental performance, and more. A stage for budding musicians!",
+      "A cultural competition where participants showcase their talent in singing, instrumental performance, and more. A stage for budding enthusiasts!",
   },
   {
     id: 5,
-    title: "PHOTOGRAPHY",
+    title: "CREATIVE ACTIVITIES",
+    image: ClayArt,
     description:
-      "Photography competition for aspiring photographers to capture the best moments. Themes will be given, and the best click wins!",
+      "Participate in our exciting creative activities competition and showcase your unique talents. Express your ideas through captivating stories, imaginative artwork, or innovative projects. Impress the judges with your originality, skill, and passion. Let your creativity soar!",
   },
 ];
 
 const Competitions = () => {
   const [currentUpcomingEvent, setCurrentUpcomingEvent] = useState(0);
   const [currentFinishedEvent, setCurrentFinishedEvent] = useState(0);
+  const handleRegisterClick = () => {
+    // Open the form in a new tab
+    window.open("https://forms.gle/FSywjD4ErG7bvyEp7", "_blank");
+  };
+
+  const [showDialog, setShowDialog] = useState(false);
+
+  const handleLearnMoreClick = () => {
+    setShowDialog(true);
+  };
+
+  const handleDialogClose = () => {
+    setShowDialog(false);
+  };
 
   return (
     <div className="text-center py-10 font-montserrat">
@@ -90,12 +119,14 @@ const Competitions = () => {
       </div>
       <div className="flex justify-center items-stretch mb-16">
         <div
-          className="p-6 rounded-lg shadow-lg w-3/5 flex flex-col justify-between"
+          className="p-6 rounded-lg shadow-lg w-3/5 lg:w-1/3 flex flex-col justify-between"
           style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: "cover",
+            backgroundImage: `url(${upcomingEventsData[currentUpcomingEvent].image})`,
+            backgroundSize: "contain",
             backgroundPosition: "center",
             backgroundBlendMode: "overlay",
+            backgroundColor: "#787474",
+            backgroundRepeat: "no-repeat",
           }}
         >
           <div>
@@ -106,7 +137,10 @@ const Competitions = () => {
               {upcomingEventsData[currentUpcomingEvent].description}
             </p>
           </div>
-          <button className="bg-green-500 text-white py-2 px-4 rounded-full self-end">
+          <button
+            onClick={handleRegisterClick}
+            className="bg-green-500 text-white py-2 px-4 rounded-full self-end"
+          >
             REGISTER
           </button>
         </div>
@@ -152,12 +186,14 @@ const Competitions = () => {
           </ul>
         </div>
         <div
-          className="p-6 rounded-lg shadow-lg w-3/5 flex flex-col justify-between"
+          className="p-6 rounded-lg shadow-lg w-3/5 lg:w-1/3 flex flex-col justify-between"
           style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: "cover",
+            backgroundImage: `url(${finishedEventsData[currentFinishedEvent].image})`,
+            backgroundSize: "contain",
             backgroundPosition: "center",
             backgroundBlendMode: "overlay",
+            backgroundColor: "#787474",
+            backgroundRepeat: "no-repeat",
           }}
         >
           <div>
@@ -168,9 +204,28 @@ const Competitions = () => {
               {finishedEventsData[currentFinishedEvent].description}
             </p>
           </div>
-          <button className="bg-green-500 text-white py-2 px-4 rounded-full self-end">
+          <button
+            className="bg-green-500 text-white py-2 px-4 rounded-full self-end"
+            onClick={handleLearnMoreClick}
+          >
             LEARN MORE
           </button>
+          {showDialog && (
+            <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50">
+              <div className="bg-white rounded-lg p-4 shadow-lg">
+                <h3 className="text-2xl font-bold mb-2">
+                  More About The Competition
+                </h3>
+                <p>{finishedEventsData[currentFinishedEvent].additionalInfo}</p>
+                <button
+                  className="bg-blue-500 text-white py-2 px-4 rounded-full"
+                  onClick={handleDialogClose}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

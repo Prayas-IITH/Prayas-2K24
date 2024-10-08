@@ -10,6 +10,47 @@ const Gallery = () => {
   const [events, setEvents] = useState([]);
   const [activeEventIndex, setActiveEventIndex] = useState(0);
 
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const sheetId = import.meta.env.VITE_SHEETS_ID;
+  //     const apiKey = import.meta.env.VITE_API_KEY;
+  //     const range = import.meta.env.VITE_RANGE;
+
+  //     try {
+  //       const response = await axios.get(
+  //         `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`
+  //       );
+  //       const rows = response.data.values;
+
+  //       if (rows.length) {
+  //         const formattedEvents = rows.slice(1).map((row) => ({
+  //           title: row[0],
+  //           date: row[1],
+  //           description: row[4],
+  //           data: row[5]
+  //             ? row[5].split(" ").map((imageLink) => {
+  //                 const fileId = imageLink.match(/\/d\/(.+?)\//)?.[1];
+  //                 return {
+  //                   image: fileId
+  //                     ? `https://drive.google.com/uc?export=view&id=${fileId}`
+  //                     : "",
+  //                   title: row[0],
+  //                 };
+  //               })
+  //             : [],
+  //         }));
+
+  //         setEvents(formattedEvents);
+  //         console.log(formattedEvents);
+  //       }
+  //     } catch (error) {
+  //       console.error("Error fetching data from Google Sheets", error);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, []);
+
   useEffect(() => {
     const fetchData = async () => {
       const sheetId = import.meta.env.VITE_SHEETS_ID;
@@ -28,19 +69,24 @@ const Gallery = () => {
             date: row[1],
             description: row[4],
             data: row[5]
-              ? row[5].split(" ").map((imageLink) => {
-                  const fileId = imageLink.match(/\/d\/(.+?)\//)?.[1];
-                  return {
-                    image: fileId
-                      ? `https://drive.google.com/uc?export=view&id=${fileId}`
-                      : "",
-                    title: row[0],
-                  };
-                })
+              ? row[5]
+                  .split(/\s+/) // Split by any amount of whitespace
+                  .map((imageLink) => {
+                    const fileId = imageLink.split("id=")[1]; // Extract the file ID
+                    const formattedImageLink = fileId
+                      ? `https://drive.google.com/uc?export=view&id=${fileId}` // Embed link
+                      : "";
+                    return {
+                      link: imageLink,
+                      image: formattedImageLink, // Set the formatted link
+                      title: row[0],
+                    };
+                  })
               : [],
           }));
 
           setEvents(formattedEvents);
+          console.log(formattedEvents);
         }
       } catch (error) {
         console.error("Error fetching data from Google Sheets", error);
@@ -51,7 +97,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center w-full mt-4 min-h-screen">
+    <div className="flex flex-col items-center w-full mt-4 lg:min-h-screen">
       <div className="text-2xl sm:text-3xl lg:text-4xl font-light tracking-widest w-full text-center font-montserrat mx-auto">
         G A L L E R Y
       </div>

@@ -1,4 +1,5 @@
-function GalleryCard({ title, description,data, index }) {
+function GalleryCard({ title, description, data, index }) {
+  // console.log(data.image);
   return (
     <div className="flex flex-col w-full max-w-[800px] mx-auto px-4">
       <div className="text-2xl font-light tracking-widest w-full text-center m-4 font-montserrat mx-auto">
@@ -18,7 +19,7 @@ function GalleryCard({ title, description,data, index }) {
           />
         </div>
 
-        <div className="flex flex-col w-full md:w-2/5 justify-start p-4 overflow-hidden">
+        <div className="flex flex-col justify-center w-full md:w-2/5 justify-start p-4 overflow-hidden">
           <div className="text-xl md:text-2xl font-light font-montserrat mb-2">
             {data.title}
           </div>
