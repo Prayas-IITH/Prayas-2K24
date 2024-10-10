@@ -28,7 +28,6 @@ function App() {
         <Routes location={location} key={location.key}>
           <Route path="/" element={<About />} />
           <Route path="/announcements" element={<Announcements />} />
-          <Route path="/competitions" element={<Competitions />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/team" element={<Team1 />} />
           <Route path="/donate" element={<Donate />} />
