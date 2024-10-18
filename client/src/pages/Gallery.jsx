@@ -98,7 +98,7 @@ const Gallery = () => {
 
   return (
     <div className="flex flex-col items-center w-full mt-4 lg:min-h-screen">
-      <div className="text-2xl sm:text-3xl lg:text-4xl font-light tracking-widest w-full text-center font-montserrat mx-auto">
+      <div className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-light tracking-widest w-full text-center font-montserrat mx-auto">
         G A L L E R Y
       </div>
       <img

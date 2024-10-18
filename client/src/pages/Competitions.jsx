@@ -102,7 +102,7 @@ const Competitions = () => {
 
   return (
     <div className="text-center py-10 font-montserrat">
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl mb-4 tracking-widest">
+      <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-5xl mb-4 tracking-widest">
         C O M P E T I T I O N S
       </h1>
       <div className="flex justify-center items-center mb-8">
@@ -111,121 +111,130 @@ const Competitions = () => {
         <hr className="w-1/4 border-t-2 border-black" />
       </div>
 
-      {/* Upcoming Events Section */}
-      <div className="flex justify-center items-center mb-8">
-        <span className="text-2xl">✦</span>
-        <h2 className="text-2xl mx-4 tracking-widest">UPCOMING EVENTS</h2>
-        <span className="text-2xl">✦</span>
-      </div>
-      <div className="flex justify-center items-stretch mb-16">
-        <div
-          className="p-6 rounded-lg shadow-lg w-3/5 lg:w-1/3 flex flex-col justify-between"
-          style={{
-            backgroundImage: `url(${upcomingEventsData[currentUpcomingEvent].image})`,
-            backgroundSize: "contain",
-            backgroundPosition: "center",
-            backgroundBlendMode: "overlay",
-            backgroundColor: "#787474",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div>
-            <h3 className="text-3xl font-bold mb-2 text-left text-white">
-              {upcomingEventsData[currentUpcomingEvent].title}
-            </h3>
-            <p className="text-sm mb-4 text-white text-left font-bold">
-              {upcomingEventsData[currentUpcomingEvent].description}
-            </p>
+      <div className="w-full lg:flex items-center justify-center lg:justify-between">
+        {/* Upcoming Events Section */}
+        <div className="lg:w-1/2">
+          <div className="flex justify-center items-center mb-8">
+            <span className="text-2xl">✦</span>
+            <h2 className="text-2xl mx-4 tracking-widest">UPCOMING EVENTS</h2>
+            <span className="text-2xl">✦</span>
           </div>
-          <button
-            onClick={handleRegisterClick}
-            className="bg-green-500 text-white py-2 px-4 rounded-full self-end"
-          >
-            REGISTER
-          </button>
-        </div>
-        <div className="ml-4 flex items-center">
-          <ul className="list-none bg-[#9D7800]/[0.42] p-1 rounded-full flex flex-col justify-between h-full">
-            {upcomingEventsData.map((event, index) => (
-              <li key={event.id} className="my-1">
-                <button
-                  onClick={() => setCurrentUpcomingEvent(index)} // Change event on click
-                  className={`bg-green-200 text-center py-2 px-4 rounded-full w-full hover:bg-green-300 focus:outline-none focus:ring-2 focus:ring-green-400 ${
-                    currentUpcomingEvent === index ? "bg-green-400" : ""
-                  }`}
-                >
-                  {event.id}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      {/* Previous Events Section */}
-      <div className="flex justify-center items-center mb-8">
-        <span className="text-2xl">✦</span>
-        <h2 className="text-2xl mx-4 tracking-widest">PREVIOUS EVENTS</h2>
-        <span className="text-2xl">✦</span>
-      </div>
-      <div className="flex justify-center items-stretch">
-        <div className="mr-4 flex items-center">
-          <ul className="list-none bg-[#9D7800]/[0.42] p-1 rounded-full flex flex-col justify-between h-full">
-            {finishedEventsData.map((event) => (
-              <li key={event.id} className="my-1">
-                <button
-                  onClick={() => setCurrentFinishedEvent(event.id - 1)} // Change event on click
-                  className={`bg-green-200 text-center py-2 px-4 rounded-full w-full hover:bg-green-300 focus:outline-none focus:ring-2 focus:ring-green-400 ${
-                    currentFinishedEvent === event.id - 1 ? "bg-green-400" : ""
-                  }`}
-                >
-                  {event.id}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div
-          className="p-6 rounded-lg shadow-lg w-3/5 lg:w-1/3 flex flex-col justify-between"
-          style={{
-            backgroundImage: `url(${finishedEventsData[currentFinishedEvent].image})`,
-            backgroundSize: "contain",
-            backgroundPosition: "center",
-            backgroundBlendMode: "overlay",
-            backgroundColor: "#787474",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div>
-            <h3 className="text-3xl text-left font-bold mb-2 text-white">
-              {finishedEventsData[currentFinishedEvent].title}
-            </h3>
-            <p className="text-md mb-4 text-left text-white font-bold">
-              {finishedEventsData[currentFinishedEvent].description}
-            </p>
-          </div>
-          <button
-            className="bg-green-500 text-white py-2 px-4 rounded-full self-end"
-            onClick={handleLearnMoreClick}
-          >
-            LEARN MORE
-          </button>
-          {showDialog && (
-            <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50">
-              <div className="bg-white rounded-lg p-4 shadow-lg">
-                <h3 className="text-2xl font-bold mb-2">
-                  More About The Competition
+          <div className="flex justify-center items-stretch mb-16 lg:mb-0">
+            <div
+              className="p-6 rounded-lg shadow-lg w-3/5 lg:w-3/4 flex flex-col justify-between"
+              style={{
+                backgroundImage: `url(${upcomingEventsData[currentUpcomingEvent].image})`,
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+                backgroundBlendMode: "overlay",
+                backgroundColor: "#787474",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <div>
+                <h3 className="text-3xl font-bold mb-2 text-left text-white">
+                  {upcomingEventsData[currentUpcomingEvent].title}
                 </h3>
-                <p>{finishedEventsData[currentFinishedEvent].additionalInfo}</p>
-                <button
-                  className="bg-blue-500 text-white py-2 px-4 rounded-full"
-                  onClick={handleDialogClose}
-                >
-                  Close
-                </button>
+                <p className="text-sm mb-4 text-white text-left font-bold">
+                  {upcomingEventsData[currentUpcomingEvent].description}
+                </p>
               </div>
+              <button
+                onClick={handleRegisterClick}
+                className="bg-green-500 text-white py-2 px-4 rounded-full self-end"
+              >
+                REGISTER
+              </button>
             </div>
-          )}
+            <div className="ml-4 flex items-center">
+              <ul className="list-none bg-[#9D7800]/[0.42] p-1 rounded-full flex flex-col justify-between h-full">
+                {upcomingEventsData.map((event, index) => (
+                  <li key={event.id} className="my-1">
+                    <button
+                      onClick={() => setCurrentUpcomingEvent(index)} // Change event on click
+                      className={`bg-green-200 text-center py-2 px-4 rounded-full w-full hover:bg-green-300 focus:outline-none focus:ring-2 focus:ring-green-400 ${
+                        currentUpcomingEvent === index ? "bg-green-400" : ""
+                      }`}
+                    >
+                      {event.id}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+        {/* Previous Events Section */}
+        <div className="lg:w-1/2">
+          <div className="flex justify-center items-center mb-8">
+            <span className="text-2xl">✦</span>
+            <h2 className="text-2xl mx-4 tracking-widest">PREVIOUS EVENTS</h2>
+            <span className="text-2xl">✦</span>
+          </div>
+          <div className="flex justify-center items-stretch">
+            <div className="mr-4 flex items-center">
+              <ul className="list-none bg-[#9D7800]/[0.42] p-1 rounded-full flex flex-col justify-between h-full">
+                {finishedEventsData.map((event) => (
+                  <li key={event.id} className="my-1">
+                    <button
+                      onClick={() => setCurrentFinishedEvent(event.id - 1)} // Change event on click
+                      className={`bg-green-200 text-center py-2 px-4 rounded-full w-full hover:bg-green-300 focus:outline-none focus:ring-2 focus:ring-green-400 ${
+                        currentFinishedEvent === event.id - 1
+                          ? "bg-green-400"
+                          : ""
+                      }`}
+                    >
+                      {event.id}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div
+              className="p-6 rounded-lg shadow-lg w-3/5 lg:w-3/4 flex flex-col justify-between"
+              style={{
+                backgroundImage: `url(${finishedEventsData[currentFinishedEvent].image})`,
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+                backgroundBlendMode: "overlay",
+                backgroundColor: "#787474",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <div>
+                <h3 className="text-3xl text-left font-bold mb-2 text-white">
+                  {finishedEventsData[currentFinishedEvent].title}
+                </h3>
+                <p className="text-md mb-4 text-left text-white font-bold">
+                  {finishedEventsData[currentFinishedEvent].description}
+                </p>
+              </div>
+              <button
+                className="bg-green-500 text-white py-2 px-4 rounded-full self-end"
+                onClick={handleLearnMoreClick}
+              >
+                LEARN MORE
+              </button>
+              {showDialog && (
+                <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50">
+                  <div className="bg-white rounded-lg p-4 shadow-lg">
+                    <h3 className="text-2xl font-bold mb-2">
+                      More About The Competition
+                    </h3>
+                    <p>
+                      {finishedEventsData[currentFinishedEvent].additionalInfo}
+                    </p>
+                    <button
+                      className="bg-blue-500 text-white py-2 px-4 rounded-full"
+                      onClick={handleDialogClose}
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>

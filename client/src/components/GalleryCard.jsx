@@ -1,7 +1,7 @@
 function GalleryCard({ title, description, data, index }) {
   // console.log(data.image);
   return (
-    <div className="flex flex-col w-full max-w-[800px] mx-auto px-4">
+    <div className="flex flex-col w-full max-w-[1200px] mx-auto px-4">
       <div className="text-2xl font-light tracking-widest w-full text-center m-4 font-montserrat mx-auto">
         {title.toUpperCase()}
       </div>
@@ -20,11 +20,11 @@ function GalleryCard({ title, description, data, index }) {
         </div>
 
         <div className="flex flex-col justify-center w-full md:w-2/5 justify-start p-4 overflow-hidden">
-          <div className="text-xl md:text-2xl font-light font-montserrat mb-2">
+          <div className="text-xl md:text-2xl lg:text-2xl font-light font-montserrat mb-2">
             {data.title}
           </div>
 
-          <div className="text-md text-gray-700 font-light overflow-auto">
+          <div className="text-lg text-gray-700 font-light overflow-auto">
             {description}
           </div>
         </div>

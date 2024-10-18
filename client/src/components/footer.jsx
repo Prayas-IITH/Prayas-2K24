@@ -9,7 +9,8 @@ function Footer() {
         <div className="flex flex-col text-center mb-4 sm:mb-0">
           <span>Gayatri Priya</span>
           <span>Overall Head</span>
-          <span>+91 6305430598</span>
+          {/* <span>+91 6305430598</span> */}
+          <span>ep23btech11032@iith.ac.in</span>
         </div>
         <img
           src={bar}
@@ -19,7 +20,8 @@ function Footer() {
         <div className="flex flex-col text-center mb-4 sm:mb-0">
           <span>Vinay Kurre</span>
           <span>PR Head</span>
-          <span>+91 9392418084</span>
+          {/* <span>+91 9392418084</span> */}
+          <span>ee23btech11036@iith.ac.in</span>
         </div>
         <img
           src={bar}
@@ -29,7 +31,8 @@ function Footer() {
         <div className="flex flex-col text-center mb-4 sm:mb-0">
           <span>Harshiitha Chanchal</span>
           <span>VCU Head</span>
-          <span>+91 9430581660</span>
+          {/* <span>+91 9430581660</span> */}
+          <span>la23mh11003@iith.ac.in</span>
         </div>
       </div>
       <div className="flex space-x-4 mt-4">

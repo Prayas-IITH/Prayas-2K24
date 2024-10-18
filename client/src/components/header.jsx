@@ -23,7 +23,7 @@ function Navbar() {
   return (
     <div className="relative flex flex-col lg:flex-row justify-between px-4 mx-5 mb-5 rounded-lg text-gray-500 h-full">
       {/* Hamburger Button for Mobile */}
-      <div className="lg:hidden flex justify-between items-center w-full">
+      <div className="lg:hidden flex justify-between items-center w-full mt-5">
         <div className="flex items-center justify-center text-center">
           {/* Display logo and "PRAYAS" on mobile */}
           <img

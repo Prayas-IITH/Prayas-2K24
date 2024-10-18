@@ -8,7 +8,7 @@ function Donate() {
 
   return (
     <div>
-      <div className="flex items-center justify-center h-4/5 w-full my-5 z-10 tracking-widest text-2xl sm:text-3xl lg:text-4xl">
+      <div className="flex items-center justify-center h-4/5 w-full my-5 z-10 tracking-widest text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-montserrat">
         D O N A T E
       </div>
 
