@@ -1,8 +1,10 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import About from "./pages/Home";
+import Home from "./pages/Home";
+import About from "./pages/About";
 import Announcements from "./pages/Announcements";
-import Competitions from "./pages/Competitions";
+// import Competitions from "./pages/Competitions";
+import Events from "./pages/Events";
 import Gallery from "./pages/Gallery";
 import Team1 from "./pages/Team1";
 import Donate from "./pages/Donate";
@@ -22,13 +24,16 @@ function App() {
         className="flex flex-col items-center flex-grow bg-[#FFFDF5] bg-repeat bg-top"
         style={{
           backgroundImage: `url('/public/Bg2.png')`,
+          // backgroundSize: "cover",
+          // backgroundRepeat: "repeat",
           // backgroundBlendMode: "overlay",
         }}
       >
         <Routes location={location} key={location.key}>
-          <Route path="/" element={<About />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/announcements" element={<Announcements />} />
-          <Route path="/competitions" element={<Competitions />} />
+          <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/team" element={<Team1 />} />
           <Route path="/donate" element={<Donate />} />

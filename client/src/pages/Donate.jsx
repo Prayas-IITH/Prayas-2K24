@@ -17,7 +17,7 @@ function Donate() {
         <img src={DividerImage} alt="Divider" className="w-auto h-8 md:h-8" />
       </div>
 
-      <div className="relative flex flex-col items-center justify-center h-screen px-8 py-16 bg-gray-50 font-montserrat">
+      <div className="relative flex flex-col items-center justify-center h-screen px-8 py-16 font-montserrat">
         {/* Outer yellow box */}
         <div
           className="relative w-full max-w-lg h-1/2 bg-[#ffdf6d] rounded-[20px]
@@ -51,6 +51,17 @@ function Donate() {
             OR
           </span>
         </div>
+
+        {/* Description */}
+        <p
+          className="flex flex-col relative mt-4 text-center text-black text-sm tracking-[1.26px] font-bold pb-2
+                   sm:text-xs
+                   md:text-sm
+                   lg:text-base"
+        >
+          <span>FOR IIT HYDERABAD STUDENTS ONLY</span>
+          <span>YOU CAN DONATE US ITEMS LIKE BOOKS, CLOTHES, ETC</span>
+        </p>
         {/* Donate button */}
         <div
           className="relative flex items-center justify-center w-full max-w-lg h-20 hover:bg-opacity-50 bg-[#273f17] hover:text-black hover:font-bold text-white rounded-full
@@ -75,15 +86,6 @@ function Donate() {
             </button>
           </span>
         </div>
-        {/* Description */}
-        <p
-          className="relative mt-4 text-center text-black text-sm tracking-[1.26px]
-                   sm:text-xs
-                   md:text-sm
-                   lg:text-base"
-        >
-          YOU CAN DONATE US ITEMS LIKE BOOKS, CLOTHES, ETC
-        </p>
       </div>
     </div>
   );

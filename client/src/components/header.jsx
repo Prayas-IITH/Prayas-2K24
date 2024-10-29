@@ -8,12 +8,13 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
+    { to: "/about", label: "ABOUT" },
+    { to: "/events", label: "EVENTS" },
     { to: "/gallery", label: "GALLERY" },
-    { to: "/competitions", label: "COMPETITIONS" },
-    { to: "/team", label: "TEAM" },
     { to: "/announcements", label: "ANNOUNCEMENTS" },
+    { to: "/team", label: "TEAM" },
+    { to: "/contact", label: "HOW TO INVOLVE" },
     { to: "/donate", label: "DONATE" },
-    { to: "/", label: "ABOUT" },
   ];
 
   const toggleMenu = () => {

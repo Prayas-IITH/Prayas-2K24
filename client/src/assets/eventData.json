@@ -1,0 +1,24 @@
+{
+  "events": [
+    {
+      "title": "School visit",
+      "date": "9/21/2024",
+      "time": "10:00:00 AM",
+      "venue": "Kandi",
+      "description": "Cleanliness, competitions",
+      "images": [
+        "/src/assets/Events/10.jpg",
+        "/src/assets/Events/6.jpg",
+        "/src/assets/Events/2.jpg"
+      ]
+    },
+    {
+      "title": "Visit to Orphanage",
+      "date": "9/15/2024",
+      "time": "10:00:00 AM",
+      "venue": "Mahima Ministries",
+      "description": "We visited orphanage to interact with children. It got great connecting to little minds with big dreams.",
+      "images": ["/src/assets/Events/7.jpg", "/src/assets/Events/15.jpg"]
+    }
+  ]
+}

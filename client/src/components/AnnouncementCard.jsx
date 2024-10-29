@@ -11,7 +11,7 @@ function AnnouncementsCard({ data }) {
 
       <div className="relative w-full scale-90 max-w-xs h-40 p-4 bg-[#FFDF6D] flex items-center justify-center">
         <img
-          src={data.photo}
+          src={data.image}
           alt={data.title}
           className="object-cover w-full h-full rounded-lg"
         />
