@@ -1,6 +1,6 @@
 import React from "react";
 import TeamRound from "/team/TeamRound.png";
-import Ribbon from "/team/Ribbon.png";
+import Ribbon from "/team/ribbon.png";
 
 const TeamMember1 = ({ name, personImage }) => {
   return (
