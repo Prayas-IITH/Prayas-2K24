@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import AnnouncementsCard from "../components/AnnouncementCard";
-import line from "../../public/line.png";
-import eventData from "../assets/eventData.json";
+import line from "../assets/line.png";
+import eventData from "../../public/Events/eventData.json";
 
 function Announcements() {
   const [events, setEvents] = useState([
@@ -12,21 +12,21 @@ function Announcements() {
       time: "10:00:00 AM",
       venue: "Kandi",
       description: "Cleanliness, competitions",
-      image: ["/src/assets/Events/10.jpg"],
+      image: ["/Events/10.jpg"],
     },
     {
       title: "Visit to Orphanage",
       date: "9/15/2024",
       time: "10:00:00 AM",
       venue: "Mahima Ministries",
-      image: ["/src/assets/Events/7.jpg"],
+      image: ["/Events/7.jpg"],
     },
     {
       title: "Prerna",
       date: "12/17/2024",
       time: "10:00:00 AM",
       venue: "IITH",
-      image: ["/src/assets/Events/7.jpg"],
+      image: ["/Events/7.jpg"],
     },
   ]);
 

@@ -1,18 +1,25 @@
 import React, { useEffect, useState } from "react";
-import TeamMember1 from "../components/TeamMember1";
+import TeamMember from "../components/TeamMember";
 import DividerImage from "/team/divider.png";
-import DiamondImage from "/team/diamond.png"; // Path to diamond image
 
-function Team() {
+const Team = () => {
   const [teams, setTeams] = useState([]);
-  const [overallHeads, setOverallHeads] = useState([]); // State for overall heads
+  const [overallHeads, setOverallHeads] = useState([]);
+  const [mentors, setMentors] = useState([]);
+  const [rdc, setRdc] = useState([]); // New state for RDC
 
   useEffect(() => {
-    fetch("/team/Team.json")
+    fetch("/team/Team1.json")
       .then((response) => response.json())
       .then((data) => {
         if (data.overallHeads) {
           setOverallHeads(data.overallHeads);
+        }
+        if (data.mentors) {
+          setMentors(data.mentors);
+        }
+        if (data.rdc) {
+          setRdc(data.rdc); // Set the RDC data
         }
         setTeams(data.teams);
       })
@@ -20,54 +27,78 @@ function Team() {
   }, []);
 
   return (
-    <div className="w-screen min-h-screen">
-      {/* Overall Heads Section */}
-      {overallHeads.length > 0 && (
-        <div className="relative flex flex-col items-center justify-center my-12 md:my-20">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            OVERALL HEADS
-          </h2>
+    <div className="w-full min-h-screen font-montserrat">
+      <div className="flex items-center justify-center h-4/5 w-full my-6 z-10 tracking-widest text-2xl sm:text-4xl lg:text-6xl">
+        T E A M
+      </div>
 
-          <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 justify-center">
-            {/* First overall head */}
-            <TeamMember1
-              name={overallHeads[0].name}
-              personImage={overallHeads[0].image || "/team/Heads/Missing.png"}
-              designation={overallHeads[0].designation}
-              size="xlarge"
+      {/* Divider Image */}
+      <div className="flex items-center justify-center">
+        <img src={DividerImage} alt="Divider" className="w-auto h-8 md:h-8" />
+      </div>
+
+      <div className="flex items-center justify-center text-md lg:text-xl my-3 tracking-widest">
+        OVERALL COORDINATOR
+      </div>
+      <div className="flex items-center justify-center my-6 md:my-10">
+        <div
+          className={`w-1/2 grid gap-8 ${
+            overallHeads.length === 1
+              ? "grid-cols-1"
+              : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-2"
+          }`}
+        >
+          {overallHeads.map((member) => (
+            <TeamMember
+              key={member.name}
+              name={member.name}
+              personImage={member.image}
+              designation={member.designation}
             />
-
-            {/* Second overall head */}
-            <TeamMember1
-              name={overallHeads[1].name}
-              personImage={overallHeads[1].image || "/team/Heads/Missing.png"}
-              designation={overallHeads[1].designation}
-              size="xlarge"
-            />
-
-            {/* Diamond Image positioned slightly above the bottom */}
-            <div className="absolute bottom-[-0px] left-1/2 transform -translate-x-1/2">
-              <img src={DiamondImage} alt="Diamond" className="h-16 w-16" />
-              {/* Adjust the size */}
-            </div>
-          </div>
+          ))}
         </div>
-      )}
+      </div>
 
-      {/* Team Sections */}
+      {/* Mentors Section */}
+      <div className="flex items-center justify-center h-4/5 w-full my-6 tracking-widest z-10 text-xl sm:text-3xl lg:text-3xl">
+        M E N T O R S
+      </div>
+
+      {/* Divider Image */}
+      <div className="flex items-center justify-center">
+        <img src={DividerImage} alt="Divider" className="w-auto h-8 md:h-8" />
+      </div>
+
+      <div className="flex items-center justify-center my-6 md:my-10">
+        <div
+          className={`w-full grid gap-8 ${
+            mentors.length === 1
+              ? "grid-cols-1"
+              : "grid-cols-1 sm:grid-cols-3 lg:grid-cols-3"
+          }`}
+        >
+          {mentors.map((member) => (
+            <TeamMember
+              key={member.name}
+              name={member.name}
+              personImage={member.image}
+              designation={member.designation}
+            />
+          ))}
+        </div>
+      </div>
+
       {teams.map((team) => (
         <div
           key={team.name}
           className="flex flex-col items-center justify-center"
         >
-          <div className="relative flex items-center justify-center h-4/5 w-screen my-10 md:my-16">
-            <p className="relative z-10 text-black text-center text-xl sm:text-3xl lg:text-3xl">
-              {team.name}
-            </p>
+          <div className="relative flex items-center justify-center h-4/5 w-full my-6 z-10 tracking-widest text-xl sm:text-3xl lg:text-4xl">
+            {team.name}
           </div>
 
           {/* Divider Image */}
-          <div className="flex items-center justify-center my-4 md:my-6">
+          <div className="flex items-center justify-center">
             <img
               src={DividerImage}
               alt="Divider"
@@ -75,72 +106,82 @@ function Team() {
             />
           </div>
 
-          {/* Team Heads Section */}
+          <div className="flex items-center justify-center text-md lg:text-xl my-3 tracking-widest">
+            H E A D
+          </div>
+
           <div className="flex items-center justify-center my-6 md:my-10">
             <div
-              className={`w-full grid gap-12 ${
-                team.heads.length === 1 ? "grid-cols-1" : "grid-cols-2"
+              className={`w-full grid gap-8 ${
+                team.heads.length === 1
+                  ? "grid-cols-1"
+                  : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-2"
               }`}
             >
-              <div className="flex items-center justify-center my-4">
-                <p className="text-2xl font-semibold text-gray-700">HEADS</p>
-              </div>
-              {team.heads.map((head) => (
-                <TeamMember1
-                  key={head.name}
-                  name={head.name}
-                  personImage={head.image || "/team/Heads/Missing.png"}
-                  designation={head.designation}
-                  size="large"
+              {team.heads.map((member) => (
+                <TeamMember
+                  key={member.name}
+                  name={member.name}
+                  personImage={member.image}
+                  designation={member.designation}
                 />
               ))}
             </div>
           </div>
 
-          <div className="flex items-center justify-center my-4">
-            <p className="text-2xl font-semibold text-gray-700">Coordinators</p>
+          <div className="flex items-center justify-center text-md lg:text-xl my-3 tracking-widest">
+            C O O R D I N A T O R S
           </div>
 
-          {/* Coordinators Section */}
-          <div className="flex items-center justify-center my-10 md:my-16">
+          <div className="flex items-center justify-center my-6 md:my-10">
             <div
-              className={`w-full grid gap-12 mt-10 ${
-                team.coords.length < 3
-                  ? "grid-cols-1 md:grid-cols-2"
-                  : "grid-cols-1 md:grid-cols-3"
+              className={`w-4/5 lg:w-full grid gap-8 ${
+                team.coords.length === 1
+                  ? "grid-cols-1"
+                  : "grid-cols-1 sm:grid-cols-3 lg:grid-cols-3"
               }`}
             >
-              {team.coords.map((coord, index) => (
-                <React.Fragment key={coord.name}>
-                  <TeamMember1
-                    name={coord.name}
-                    personImage={coord.image || "/team/Coords/Missing.png"}
-                    designation={coord.designation}
-                    size="small"
-                    className="my-4"
-                  />
-                </React.Fragment>
+              {team.coords.map((member) => (
+                <TeamMember
+                  key={member.name}
+                  name={member.name}
+                  personImage={member.image}
+                  designation={member.designation}
+                />
               ))}
-
-              {/* Diamond Image positioned at the bottom */}
-              {team.coords.length > 1 && (
-                <div className="flex items-center justify-center mt-2">
-                  <img
-                    src={DiamondImage}
-                    alt="Diamond"
-                    className="h-8 w-8 mx-1"
-                  />
-                </div>
-              )}
             </div>
           </div>
         </div>
       ))}
-      <div className="w-full h-full">
-        <div className="bg-[#273F17] w-3/4 md:w-1/2 lg:w-1/3 h-16 md:h-20 lg:h-24 flex items-center justify-center rounded-r-full rounded-l-full"></div>
+
+      {/* RDC Section */}
+      <div className="flex items-center justify-center text-md lg:text-4xl my-3 tracking-widest">
+        R D C
+      </div>
+
+      {/* Divider Image */}
+      <div className="flex items-center justify-center">
+        <img src={DividerImage} alt="Divider" className="w-auto h-8 md:h-8" />
+      </div>
+
+      <div className="flex items-center justify-center my-6 md:my-10">
+        <div
+          className={`w-1/2 grid gap-8 ${
+            rdc.length === 1 ? "grid-cols-1" : "grid-cols-1 lg:grid-cols-2"
+          }`}
+        >
+          {rdc.map((member) => (
+            <TeamMember
+              key={member.name}
+              name={member.name}
+              personImage={member.image}
+              designation={member.designation}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default Team;

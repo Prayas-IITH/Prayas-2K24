@@ -101,8 +101,19 @@ function Navbar() {
       </div>
 
       {/* Nav Items for Desktop */}
-      <div className="hidden lg:flex flex-col lg:flex-row gap-4 lg:gap-8 items-center lg:items-center lg:justify-between w-full font-montserrat">
-        <div className="flex flex-row gap-4 lg:gap-8 items-center justify-start font-montserrat">
+      <div className="hidden lg:flex flex-col lg:flex-row gap-4 lg:gap-8 lg:my-10 items-center lg:items-center lg:justify-between w-full font-montserrat">
+        <div className="flex items-center justify-center text-center">
+          {/* Display logo and "PRAYAS" on mobile */}
+          <img
+            src={Logo}
+            alt="Logo"
+            className="w-10 h-10 mr-2" // Adjust the size of the logo
+          />
+          <p className="text-3xl font-normal text-[#000000] font-sans tracking-widest">
+            PRAYAS
+          </p>
+        </div>
+        {/* <div className="flex flex-row gap-4 lg:gap-8 items-center justify-start font-montserrat">
           {navItems.slice(0, 3).map((item) => (
             <NavLink
               key={item.to}
@@ -130,9 +141,9 @@ function Navbar() {
               {item.label}
             </NavLink>
           ))}
-        </div>
+        </div> */}
 
-        <div
+        {/* <div
           className="hidden lg:flex flex-col items-center bg-cover bg-no-repeat justify-center text-center font-montserrat"
           style={{
             backgroundImage: `url(${Header})`,
@@ -148,9 +159,9 @@ function Navbar() {
           <p className="text-lg lg:text-2xl tracking-[.8em] mt-2 mb-5 text-[#000000] font-sans">
             IITH
           </p>
-        </div>
+        </div> */}
 
-        <div className="flex flex-row gap-4 lg:gap-8 items-center font-montserrat justify-end">
+        {/* <div className="flex flex-row gap-4 lg:gap-8 items-center font-montserrat justify-end">
           {navItems.slice(3).map((item) => (
             <NavLink
               key={item.to}
@@ -169,6 +180,37 @@ function Navbar() {
                       width: "clamp(5rem, 15vw, 10rem)",
                       height: "clamp(2rem, 3vw, 2.5rem)",
                       display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }
+                  : {}
+              }
+            >
+              {item.label}
+            </NavLink>
+          ))}
+        </div> */}
+
+        <div className="flex flex-row gap-4 lg:gap-8 items-center justify-start font-montserrat">
+          {navItems.map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              className={({ isActive }) =>
+                `text-sm px-1 transition-all duration-300 rounded ${
+                  isActive
+                    ? "bg-no-repeat bg-center bg-contain scale-x-125 text-white scale-105"
+                    : "hover:text-yellow-400 scale-100"
+                }`
+              }
+              style={({ isActive }) =>
+                isActive
+                  ? {
+                      backgroundImage: `url(${activeBg})`,
+                      width: "clamp(5rem, 15vw, 10rem)",
+                      height: "clamp(2rem, 3vw, 2.5rem)",
+                      display: "flex",
+                      justifyItems: "center",
                       justifyContent: "center",
                       alignItems: "center",
                     }

@@ -6,13 +6,13 @@ import Announcements from "./pages/Announcements";
 // import Competitions from "./pages/Competitions";
 import Events from "./pages/Events";
 import Gallery from "./pages/Gallery";
-import Team1 from "./pages/Team1";
+import Team from "./pages/Team";
 import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import Navbar from "./components/header";
 import "./index.css";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer1";
 
 function App() {
   const location = useLocation();
@@ -23,7 +23,7 @@ function App() {
       <div
         className="flex flex-col items-center flex-grow bg-[#FFFDF5] bg-repeat bg-top"
         style={{
-          backgroundImage: `url('/public/Bg2.png')`,
+          backgroundImage: `url('/src/assets/Bg2.png')`,
           // backgroundSize: "cover",
           // backgroundRepeat: "repeat",
           // backgroundBlendMode: "overlay",
@@ -35,7 +35,7 @@ function App() {
           <Route path="/announcements" element={<Announcements />} />
           <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/team" element={<Team1 />} />
+          <Route path="/team" element={<Team />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />

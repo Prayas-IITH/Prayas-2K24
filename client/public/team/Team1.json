@@ -1,0 +1,225 @@
+{
+  "rdc": [
+    {
+      "name": "Naresh",
+      "image": "/team/Heads/Naresh.jpg",
+      "designation": "RDC Head"
+    }
+  ],
+  "overallHeads": [
+    {
+      "name": "Gayatri",
+      "image": "/team/Heads/Gayatri.jpg",
+      "designation": "B.Tech 2nd Year, EP"
+    }
+  ],
+
+  "teams": [
+    {
+      "name": "LOGISTICS",
+      "heads": [
+        {
+          "name": "Parvez",
+          "image": "/team/Heads/Shaik P Parvez.jpeg",
+          "designation": "B.Tech 3rd Year, CS"
+        }
+      ],
+      "coords": [
+        {
+          "name": "Omkar",
+          "image": "/team/Coords/Omkar.jpeg",
+          "designation": "B.Tech 3rd Year, ME"
+        },
+        {
+          "name": "Mohit",
+          "image": "/team/Coords/Mohit.jpeg",
+          "designation": "PhD 1st year, CH"
+        },
+        {
+          "name": "Pratyushee",
+          "image": "/team/Coords/Pratyushee.jpg",
+          "designation": "M.Tech 1st Year, BM"
+        }
+      ]
+    },
+    {
+      "name": "PR OUTREACH",
+      "heads": [
+        {
+          "name": "Vinay",
+          "image": "/team/Heads/Vinay.jpg",
+          "designation": "B.Tech 2nd Year, EE"
+        }
+      ],
+      "coords": [
+        {
+          "name": "Sneha",
+          "image": "/team/Coords/Sneha.jpg",
+          "designation": "MSc 1st year, CY"
+        },
+        {
+          "name": "Sukesh",
+          "image": "/team/Coords/Sukesh.png",
+          "designation": "B.Tech 2nd Year, AI"
+        },
+        {
+          "name": "Nithya",
+          "image": "/team/Coords/Nithya.jpg",
+          "designation": "M.Tech 2nd Year, BM"
+        }
+      ]
+    },
+    {
+      "name": "FINANCE",
+      "heads": [
+        {
+          "name": "Avantika",
+          "image": "/team/Heads/Avantika.jpg",
+          "designation": "B.Tech 2nd Year, EP"
+        }
+      ],
+      "coords": [
+        {
+          "name": "Amit Vikram",
+          "image": "/team/Coords/Vikram.jpg",
+          "designation": "M.Tech 2nd Year, EM"
+        },
+        {
+          "name": "Aryan",
+          "image": "/team/Coords/Aryan.jpg",
+          "designation": "B.Tech 3rd Year, EE"
+        },
+        {
+          "name": "Abhinav",
+          "image": "/team/Coords/Abhinav.jpg",
+          "designation": "B.Tech 1st Year, MSME"
+        }
+      ]
+    },
+    {
+      "name": "MULTIMEDIA DESIGN",
+      "heads": [
+        {
+          "name": "Abhishek",
+          "image": "/team/Heads/Abhishek.jpg",
+          "designation": "B.Tech 2nd Year, ME"
+        }
+      ],
+      "coords": [
+        {
+          "name": "Annant",
+          "image": "/team/Coords/Annant.jpg",
+          "designation": "B.Tech 1st Year, IC"
+        },
+        {
+          "name": "Jaswanth",
+          "image": "/team/Coords/Jaswanth.jpg",
+          "designation": "B.Tech 2nd Year, ME"
+        },
+        {
+          "name": "Shloak",
+          "image": "/team/Coords/Shloak.jpg",
+          "designation": "B.Des 2nd Year"
+        }
+      ]
+    },
+    {
+      "name": "VCU",
+      "heads": [
+        {
+          "name": "Harshitha",
+          "image": "/team/Heads/Harshita Chanchal.jpg",
+          "designation": "LA MH 2nd Year"
+        }
+      ],
+      "coords": [
+        {
+          "name": "Rishi",
+          "image": "/team/Coords/Rishi.jpg",
+          "designation": "B.Tech 2nd Year, CS"
+        },
+        {
+          "name": "Achal",
+          "image": "/team/Coords/Achal.jpg",
+          "designation": "PhD 1st year"
+        },
+        {
+          "name": "Prince",
+          "image": "/team/Coords/Prince Verma.jpg",
+          "designation": "M.Tech 1st Year, SM"
+        }
+      ]
+    },
+    {
+      "name": "WEB",
+      "heads": [
+        {
+          "name": "Tejasri",
+          "image": "/team/Heads/Tejasri.jpg",
+          "designation": "B.Tech 2nd year, EP"
+        }
+      ],
+      "coords": [
+        {
+          "name": "Sathwik",
+          "image": "/team/Coords/Prudhvi Raj.png",
+          "designation": "B.Tech 2nd Year, CS"
+        },
+        {
+          "name": "Praneeth",
+          "image": "/team/Coords/Praneeth.jpg",
+          "designation": "B.Tech 2nd Year, CS"
+        },
+        {
+          "name": "Naishadha",
+          "image": "/team/Coords/Naishadha.jpg",
+          "designation": "B.Tech 2nd year, EP"
+        }
+      ]
+    },
+    {
+      "name": "EVENTS",
+      "heads": [
+        {
+          "name": "Archana",
+          "image": "/team/Heads/Archana.jpg",
+          "designation": "LA MA 2nd Year"
+        }
+      ],
+      "coords": [
+        {
+          "name": "Deddeepya",
+          "image": "/team/Coords/Deddeepya.jpg",
+          "designation": "B.Tech 3rd Year, CS"
+        },
+        {
+          "name": "Sahasra",
+          "image": "/team/Coords/Sahasra.jpg",
+          "designation": "B.Tech 1st Year, ME"
+        },
+        {
+          "name": "Pritesh",
+          "image": "/team/Coords/Pritesh Singh.jpg",
+          "designation": "B.Tech 3rd Year, BM"
+        }
+      ]
+    }
+  ],
+  "mentors": [
+    {
+      "name": "Sai Kiran",
+      "image": "/team/Mentors/Sai Kiran.jpg",
+      "designation": "Mentor"
+    },
+    {
+      "name": "Vikram",
+      "image": "/team/Mentors/Vikram.jpg",
+      "designation": "Mentor"
+    },
+    {
+      "name": "Uday",
+      "image": "/team/Mentors/Uday.jpg",
+      "designation": "Mentor"
+    }
+  ]
+}

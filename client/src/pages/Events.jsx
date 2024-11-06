@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 const Events = () => {
   return (
@@ -31,7 +32,7 @@ const Events = () => {
               and entertainment, we aim to create an unforgettable experience
               that fosters a passion for learning and encourages students to
               reach their full potential. Join us for a day of discovery and
-              excitement at IITH! Shorten this
+              excitement at IITH!
             </p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import Orphanage from "../assets/Events/10.jpg";
+import Orphanage from "../../public/Events/10.jpg";
 
 function GalleryCard({ title, description, image, index }) {
   // console.log(data.image);

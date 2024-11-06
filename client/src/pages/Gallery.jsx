@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import line from "../../public/line.png";
+import line from "../assets/line.png";
 import GalleryCard from "../components/GalleryCard";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import "@splidejs/react-splide/css";
 import axios from "axios";
 // import Orphanage from "../assets/Events/10.jpg";
-import eventData from "../assets/eventData.json";
+import eventData from "../../public/Events/eventData.json";
 
 const Gallery = () => {
   // const [events, setEvents] = useState([]);

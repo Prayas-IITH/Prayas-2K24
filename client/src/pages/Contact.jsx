@@ -2,7 +2,7 @@ function Contact() {
   return (
     <div className="w-full min-h-screen font-montserrat">
       <div className="text-center py-10">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 tracking-widest font-extralight">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 tracking-widest">
           INVOLVE IN PRAYAS
         </h1>
         <div className="flex justify-center items-center mb-8">
