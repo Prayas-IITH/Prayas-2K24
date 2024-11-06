@@ -23,7 +23,9 @@ const TeamMember = ({ name, personImage, designation }) => {
         <img src={Ribbon} alt="Ribbon" className="w-full object-contain" />
         {/* Name and Designation on Ribbon */}
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <h3 className="text-white text-lg font-semibold">{name}</h3>
+          <h3 className="text-white text-sm md:text-lg lg:text-lg font-semibold">
+            {name}
+          </h3>
           <p className="text-white text-sm lg:text-md font-normal">
             {designation}
           </p>

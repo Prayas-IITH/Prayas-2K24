@@ -42,7 +42,7 @@ const Team = () => {
       </div>
       <div className="flex items-center justify-center my-6 md:my-10">
         <div
-          className={`w-1/2 grid gap-8 ${
+          className={`w-full lg:w-1/2 grid gap-8 ${
             overallHeads.length === 1
               ? "grid-cols-1"
               : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-2"
@@ -166,7 +166,7 @@ const Team = () => {
 
       <div className="flex items-center justify-center my-6 md:my-10">
         <div
-          className={`w-1/2 grid gap-8 ${
+          className={`w-full lg:w-1/2 grid gap-8 ${
             rdc.length === 1 ? "grid-cols-1" : "grid-cols-1 lg:grid-cols-2"
           }`}
         >
