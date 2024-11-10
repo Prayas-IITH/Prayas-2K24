@@ -90,6 +90,10 @@ function Navbar() {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
+                    ...(item.label == "ANNOUNCEMENTS" ||
+                    item.label == "HOW TO INVOLVE"
+                      ? { fontSize: 16 }
+                      : {}),
                   }
                 : {}
             }
@@ -213,6 +217,10 @@ function Navbar() {
                       justifyItems: "center",
                       justifyContent: "center",
                       alignItems: "center",
+                      ...(item.label == "ANNOUNCEMENTS" ||
+                      item.label == "HOW TO INVOLVE"
+                        ? { fontSize: 12 }
+                        : {}),
                     }
                   : {}
               }
