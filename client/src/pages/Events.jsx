@@ -21,19 +21,22 @@ const Events = () => {
           </h1>
           <div className="flex flex-col items-center justify-center p-4 my-2 lg:w-3/4 text-md lg:text-xl">
             <p>
-              We invite school students to join us for an exciting and
-              educational event at the Indian Institute of Technology Hyderabad
-              (IITH) campus on December 17, 2024. This fun-filled day is
-              designed to inspire young minds by offering hands-on workshops,
-              engaging activities, and interactive learning sessions. Students
-              will have the opportunity to explore various STEM fields, such as
-              robotics, coding, and renewable energy, while also participating
-              in team-building and creative workshops. By combining education
-              and entertainment, we aim to create an unforgettable experience
-              that fosters a passion for learning and encourages students to
-              reach their full potential. Join us for a day of discovery and
-              excitement at IITH!
+              We invite school students to join us for an exciting and educational event at the Indian Institute of Technology 
+              Hyderabad (IITH) campus on December 17, 2024. Prerna is an event aimed at motivating school students and introducing 
+              them to the world of higher education and innovation. The day includes inspiring speeches by esteemed
+              guests, an engaging campus tour, a fun quiz, cultural performances, and interactive 
+              sessions with IPS and IRS officers. The event concludes with prize distribution. 
+              Join us for a day of discovery and excitement at IITH!
             </p>
+            <a 
+              href="https://docs.google.com/spreadsheets/d/1-us-6_EekcWspf-V-leOp0rO7rSYH5-der_a880Rfa0/edit?gid=351336035#gid=351336035" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="mt-6 mb-4 px-8 py-2 bg-white text-[#556B2F] rounded-lg tracking-wider font-medium 
+                transition-all duration-300 hover:bg-opacity-90 hover:scale-105"
+            >
+              Schedule
+            </a>
           </div>
         </div>
         <div className="w-3/4 h-1/2 bg-[#556B2F] rounded-xl flex flex-col items-center mt-10">

@@ -6,7 +6,8 @@ const Team = () => {
   const [teams, setTeams] = useState([]);
   const [overallHeads, setOverallHeads] = useState([]);
   const [mentors, setMentors] = useState([]);
-  const [rdc, setRdc] = useState([]); // New state for RDC
+  const [rdc, setRdc] = useState([]);
+  const [activeTab, setActiveTab] = useState('prayas'); // Default to prayas tab
 
   useEffect(() => {
     fetch("/team/Team1.json")
@@ -19,24 +20,49 @@ const Team = () => {
           setMentors(data.mentors);
         }
         if (data.rdc) {
-          setRdc(data.rdc); // Set the RDC data
+          setRdc(data.rdc);
         }
         setTeams(data.teams);
       })
       .catch((error) => console.error("Error fetching JSON:", error));
   }, []);
 
-  return (
-    <div className="w-full min-h-screen font-montserrat">
-      <div className="flex items-center justify-center h-4/5 w-full my-6 z-10 tracking-widest text-2xl sm:text-4xl lg:text-6xl">
+  // Render the toggle buttons
+  const renderToggleButtons = () => (
+    <div className="flex items-center justify-center gap-4 mb-6">
+      <button
+        onClick={() => setActiveTab('prayas')}
+        className={`px-8 py-2 text-lg tracking-widest transition-all duration-300 border-2 ${
+          activeTab === 'prayas'
+            ? 'bg-black text-white border-black'
+            : 'bg-transparent text-black border-black hover:bg-black hover:text-white'
+        }`}
+      >
+        P R A Y A S
+      </button>
+      <button
+        onClick={() => setActiveTab('rdc')}
+        className={`px-8 py-2 text-lg tracking-widest transition-all duration-300 border-2 ${
+          activeTab === 'rdc'
+            ? 'bg-black text-white border-black'
+            : 'bg-transparent text-black border-black hover:bg-black hover:text-white'
+        }`}
+      >
+        R D C
+      </button>
+    </div>
+  );
+
+  // Render Prayas team content
+  const renderPrayasContent = () => (
+    <>
+    <div className="flex items-center justify-center h-4/5 w-full my-6 z-10 tracking-widest text-2xl sm:text-4xl lg:text-6xl">
         T E A M
       </div>
 
-      {/* Divider Image */}
       <div className="flex items-center justify-center">
         <img src={DividerImage} alt="Divider" className="w-auto h-8 md:h-8" />
       </div>
-
       <div className="flex items-center justify-center text-md lg:text-xl my-3 tracking-widest">
         OVERALL COORDINATOR
       </div>
@@ -59,12 +85,10 @@ const Team = () => {
         </div>
       </div>
 
-      {/* Mentors Section */}
       <div className="flex items-center justify-center h-4/5 w-full my-6 tracking-widest z-10 text-xl sm:text-3xl lg:text-3xl">
         M E N T O R S
       </div>
 
-      {/* Divider Image */}
       <div className="flex items-center justify-center">
         <img src={DividerImage} alt="Divider" className="w-auto h-8 md:h-8" />
       </div>
@@ -97,13 +121,8 @@ const Team = () => {
             {team.name}
           </div>
 
-          {/* Divider Image */}
           <div className="flex items-center justify-center">
-            <img
-              src={DividerImage}
-              alt="Divider"
-              className="w-auto h-8 md:h-8"
-            />
+            <img src={DividerImage} alt="Divider" className="w-auto h-8 md:h-8" />
           </div>
 
           <div className="flex items-center justify-center text-md lg:text-xl my-3 tracking-widest">
@@ -153,13 +172,16 @@ const Team = () => {
           </div>
         </div>
       ))}
+    </>
+  );
 
-      {/* RDC Section */}
-      <div className="flex items-center justify-center text-md lg:text-4xl my-3 tracking-widest">
+  // Render RDC team content
+  const renderRdcContent = () => (
+    <>
+      <div className="flex items-center justify-center text-2xl lg:text-6xl my-3 tracking-widest">
         R D C
       </div>
 
-      {/* Divider Image */}
       <div className="flex items-center justify-center">
         <img src={DividerImage} alt="Divider" className="w-auto h-8 md:h-8" />
       </div>
@@ -180,6 +202,17 @@ const Team = () => {
           ))}
         </div>
       </div>
+    </>
+  );
+
+  return (
+    <div className="w-full min-h-screen font-montserrat">
+       {renderToggleButtons()}
+
+        {activeTab === 'prayas' ? renderPrayasContent() : renderRdcContent()}
+      
+
+     
     </div>
   );
 };

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Header from "../assets/Header.png";
 import activeBg from "../assets/ActivePage.png";
-import Logo from "../assets/Logo.png"; // Import your logo
+import Logo from "../assets/Logo.jpeg";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
