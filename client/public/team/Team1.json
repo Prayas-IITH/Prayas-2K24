@@ -8,7 +8,17 @@
     {
       "name": "Satish Kumar",
       "image": "../team/Heads/Satish.png",
-      "designation": "Chariman"
+      "designation": "Chairman"
+    },
+    {
+      "name": "Prempal",
+      "image": "../team/Heads/Prempal.jpg",
+      "designation": "Chairman"
+    },
+    {
+      "name": "G. Ramesh",
+      "image": "../team/Heads/Ramesh.jpg",
+      "designation": "Chairman"
     },
     {
       "name": "Mahendrakumar",
@@ -18,12 +28,12 @@
     {
       "name": "Prasad S Onkar",
       "image": "../team/Heads/Prasad.jpg",
-      "designation": "Member-UBA Coordinator"
+      "designation": "UBA Coordinator"
     },
     {
       "name": "Saurabh Sandilya",
       "image": "../team/Heads/Saurabh.jpg",
-      "designation": "Member-NSS Coordinator"
+      "designation": "NSS Coordinator"
     },
     {
       "name": "Ambika S",
@@ -92,7 +102,7 @@
       "heads": [
         {
           "name": "Vinay",
-          "image": "../team/Heads/vinay.jpg",
+          "image": "/team/Heads/Vinay.jpg",
           "designation": "B.Tech 2nd Year, EE"
         }
       ],
@@ -119,7 +129,7 @@
       "heads": [
         {
           "name": "Avantika",
-          "image": "../team/Heads/avantika.jpg",
+          "image": "/team/Heads/Avantika.jpg",
           "designation": "B.Tech 2nd Year, EP"
         }
       ],
@@ -128,11 +138,6 @@
           "name": "Amit Vikram",
           "image": "/team/Coords/Vikram.jpg",
           "designation": "M.Tech 2nd Year, EM"
-        },
-        {
-          "name": "Aryan",
-          "image": "/team/Coords/Aryan.jpg",
-          "designation": "B.Tech 3rd Year, EE"
         },
         {
           "name": "Abhinav",
@@ -146,7 +151,7 @@
       "heads": [
         {
           "name": "Abhishek",
-          "image": "../team/Heads/abhishek.jpg",
+          "image": "/team/Heads/Abhishek.jpg",
           "designation": "B.Tech 2nd Year, ME"
         }
       ],
@@ -200,7 +205,7 @@
       "heads": [
         {
           "name": "Tejasri",
-          "image": "../team/Heads/tejasri.jpg",
+          "image": "/team/Heads/Tejasri.jpg",
           "designation": "B.Tech 2nd year, EP"
         }
       ],

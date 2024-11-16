@@ -7,7 +7,7 @@ const Team = () => {
   const [overallHeads, setOverallHeads] = useState([]);
   const [mentors, setMentors] = useState([]);
   const [rdc, setRdc] = useState([]);
-  const [activeTab, setActiveTab] = useState('prayas'); // Default to prayas tab
+  const [activeTab, setActiveTab] = useState("prayas"); // Default to prayas tab
 
   useEffect(() => {
     fetch("/team/Team1.json")
@@ -29,23 +29,23 @@ const Team = () => {
 
   // Render the toggle buttons
   const renderToggleButtons = () => (
-    <div className="flex items-center justify-center gap-4 mb-6">
+    <div className="flex items-center justify-center gap-10 mb-6">
       <button
-        onClick={() => setActiveTab('prayas')}
-        className={`px-8 py-2 text-lg tracking-widest transition-all duration-300 border-2 ${
-          activeTab === 'prayas'
-            ? 'bg-black text-white border-black'
-            : 'bg-transparent text-black border-black hover:bg-black hover:text-white'
+        onClick={() => setActiveTab("prayas")}
+        className={`px-8 py-2 text-lg tracking-widest transition-all duration-300 border-2 rounded-xl sm:w-1/4 lg:w-1/4 ${
+          activeTab === "prayas"
+            ? "bg-black text-white border-black"
+            : "bg-transparent text-black border-black hover:bg-black hover:text-white"
         }`}
       >
         P R A Y A S
       </button>
       <button
-        onClick={() => setActiveTab('rdc')}
-        className={`px-8 py-2 text-lg tracking-widest transition-all duration-300 border-2 ${
-          activeTab === 'rdc'
-            ? 'bg-black text-white border-black'
-            : 'bg-transparent text-black border-black hover:bg-black hover:text-white'
+        onClick={() => setActiveTab("rdc")}
+        className={`px-8 py-2 text-lg tracking-widest transition-all duration-300 border-2 rounded-xl sm:w-1/4 lg:w-1/4 ${
+          activeTab === "rdc"
+            ? "bg-black text-white border-black"
+            : "bg-transparent text-black border-black hover:bg-black hover:text-white"
         }`}
       >
         R D C
@@ -56,7 +56,7 @@ const Team = () => {
   // Render Prayas team content
   const renderPrayasContent = () => (
     <>
-    <div className="flex items-center justify-center h-4/5 w-full my-6 z-10 tracking-widest text-2xl sm:text-4xl lg:text-6xl">
+      <div className="flex items-center justify-center h-4/5 w-full my-10 z-10 tracking-widest text-2xl sm:text-4xl lg:text-6xl">
         T E A M
       </div>
 
@@ -122,7 +122,11 @@ const Team = () => {
           </div>
 
           <div className="flex items-center justify-center">
-            <img src={DividerImage} alt="Divider" className="w-auto h-8 md:h-8" />
+            <img
+              src={DividerImage}
+              alt="Divider"
+              className="w-auto h-8 md:h-8"
+            />
           </div>
 
           <div className="flex items-center justify-center text-md lg:text-xl my-3 tracking-widest">
@@ -178,7 +182,7 @@ const Team = () => {
   // Render RDC team content
   const renderRdcContent = () => (
     <>
-      <div className="flex items-center justify-center text-2xl lg:text-6xl my-3 tracking-widest">
+      <div className="flex items-center justify-center text-2xl lg:text-6xl my-10 tracking-widest">
         R D C
       </div>
 
@@ -188,8 +192,10 @@ const Team = () => {
 
       <div className="flex items-center justify-center my-6 md:my-10">
         <div
-          className={`w-full lg:w-1/2 grid gap-8 ${
-            rdc.length === 1 ? "grid-cols-1" : "grid-cols-1 lg:grid-cols-2"
+          className={`w-full grid gap-8 ${
+            rdc.length === 1
+              ? "grid-cols-1"
+              : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
           }`}
         >
           {rdc.map((member) => (
@@ -207,12 +213,9 @@ const Team = () => {
 
   return (
     <div className="w-full min-h-screen font-montserrat">
-       {renderToggleButtons()}
+      {renderToggleButtons()}
 
-        {activeTab === 'prayas' ? renderPrayasContent() : renderRdcContent()}
-      
-
-     
+      {activeTab === "prayas" ? renderPrayasContent() : renderRdcContent()}
     </div>
   );
 };
