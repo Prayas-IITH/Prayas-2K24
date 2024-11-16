@@ -102,7 +102,7 @@
       "heads": [
         {
           "name": "Vinay",
-          "image": "/team/Heads/Vinay.jpg",
+          "image": "../team/Heads/vinay.jpg",
           "designation": "B.Tech 2nd Year, EE"
         }
       ],
@@ -129,7 +129,7 @@
       "heads": [
         {
           "name": "Avantika",
-          "image": "/team/Heads/Avantika.jpg",
+          "image": "../team/Heads/avantika.jpg",
           "designation": "B.Tech 2nd Year, EP"
         }
       ],
@@ -151,7 +151,7 @@
       "heads": [
         {
           "name": "Abhishek",
-          "image": "/team/Heads/Abhishek.jpg",
+          "image": "../team/Heads/abhishek.jpg",
           "designation": "B.Tech 2nd Year, ME"
         }
       ],
@@ -205,7 +205,7 @@
       "heads": [
         {
           "name": "Tejasri",
-          "image": "/team/Heads/Tejasri.jpg",
+          "image": "../team/Heads/tejasri.jpg",
           "designation": "B.Tech 2nd year, EP"
         }
       ],
