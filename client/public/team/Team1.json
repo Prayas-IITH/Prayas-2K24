@@ -47,7 +47,7 @@
       "heads": [
         {
           "name": "Vinay",
-          "image": "/team/Heads/Vinay.jpg",
+          "image": "../team/Heads/vinay.jpg",
           "designation": "B.Tech 2nd Year, EE"
         }
       ],
@@ -74,7 +74,7 @@
       "heads": [
         {
           "name": "Avantika",
-          "image": "/team/Heads/Avantika.jpg",
+          "image": "../team/Heads/avantika.jpg",
           "designation": "B.Tech 2nd Year, EP"
         }
       ],
@@ -101,7 +101,7 @@
       "heads": [
         {
           "name": "Abhishek",
-          "image": "/team/Heads/Abhishek.jpg",
+          "image": "../team/Heads/abhishek.jpg",
           "designation": "B.Tech 2nd Year, ME"
         }
       ],
@@ -155,14 +155,14 @@
       "heads": [
         {
           "name": "Tejasri",
-          "image": "/team/Heads/Tejasri.jpg",
+          "image": "../team/Heads/tejasri.jpg",
           "designation": "B.Tech 2nd year, EP"
         }
       ],
       "coords": [
         {
           "name": "Sathwik",
-          "image": "/team/Coords/Prudhvi Raj.png",
+          "image": "../team/Anonymous.jpg",
           "designation": "B.Tech 2nd Year, CS"
         },
         {
@@ -182,7 +182,7 @@
       "heads": [
         {
           "name": "Archana",
-          "image": "/team/Heads/Archana.jpg",
+          "image": "../team/Anonymous.jpg",
           "designation": "LA MA 2nd Year"
         }
       ],
@@ -213,12 +213,12 @@
     },
     {
       "name": "Vikram",
-      "image": "/team/Mentors/Vikram.jpg",
+      "image": "../team/Anonymous.jpg",
       "designation": "Mentor"
     },
     {
       "name": "Uday",
-      "image": "/team/Mentors/Uday.jpg",
+      "image": "../team/Anonymous.jpg",
       "designation": "Mentor"
     }
   ]
