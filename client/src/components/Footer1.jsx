@@ -36,7 +36,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex space-x-4 mt-4">
-        <a
+        {/* <a
           href="https://facebook.com"
           className="hover:underline"
           target="_blank"
@@ -51,7 +51,8 @@ function Footer() {
           rel="noopener noreferrer"
         >
           <FaTwitter size={24} />
-        </a>
+        </a> */}
+        <p>Follow us on:</p>
         <a
           href="https://www.instagram.com/prayas_rdc_iith?igsh=djkxZmNjNDhsd2Z2"
           className="hover:underline"

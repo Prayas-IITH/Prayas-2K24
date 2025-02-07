@@ -23,7 +23,7 @@ const Gallery = () => {
         className="mx-auto w-fit lg:scale-x-[0.6] my-8"
       />
       {eventData.events.map((event, eventIndex) => (
-        <div key={eventIndex} className="w-full mx-auto relative mb-8">
+        <div key={eventIndex} className="w-full lg:w-3/4 mx-auto relative mb-8">
           <Splide
             options={{
               type: "loop",
@@ -36,7 +36,7 @@ const Gallery = () => {
                 speed: 1,
               },
               align: "center",
-              arrows: false,
+              arrows: true,
             }}
             onMoved={(newIndex) => setActiveEventIndex(newIndex)}
           >

@@ -7,7 +7,7 @@ const TeamMember = ({ name, personImage, designation }) => {
     <div className="relative flex flex-col items-center justify-center gap-4 w-full">
       {/* TeamRound as background for the person image */}
       <div
-        className="relative w-4/5 md:w-3/5 aspect-square rounded-full bg-center bg-cover flex items-center justify-center"
+        className="relative w-3/5 md:w-2/5 aspect-square rounded-full bg-center bg-cover flex items-center justify-center"
         style={{ backgroundImage: `url(${TeamRound})` }} // Corrected template literal
       >
         <img
@@ -22,7 +22,7 @@ const TeamMember = ({ name, personImage, designation }) => {
         {/* Ribbon Image */}
         <img src={Ribbon} alt="Ribbon" className="w-full object-contain" />
         {/* Name and Designation on Ribbon */}
-        <div className="absolute inset-0 scale-[0.8] flex flex-col items-center justify-center">
+        <div className="absolute inset-0 scale-[1] flex flex-col items-center justify-center">
           <h3 className="text-white text-sm md:text-lg lg:text-lg font-semibold">
             {name}
           </h3>

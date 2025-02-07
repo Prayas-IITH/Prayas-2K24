@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Header from "../assets/Header.png";
 import activeBg from "../assets/ActivePage.png";
-import Logo from "../assets/Logo.jpeg";
+import Logo from "../assets/Logo.jpg";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +32,7 @@ function Navbar() {
             alt="Logo"
             className="w-8 h-8 mr-2" // Adjust the size of the logo
           />
-          <p className="text-2xl font-semibold text-[#000000] font-sans tracking-widest">
+          <p className="text-2xl font-semibold text-[#000000] tracking-widest font-montserrat">
             PRAYAS
           </p>
         </div>

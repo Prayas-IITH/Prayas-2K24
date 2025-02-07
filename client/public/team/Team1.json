@@ -3,62 +3,12 @@
     {
       "name": "Naresh",
       "image": "/team/Heads/Naresh.jpg",
-      "designation": "RDC Head"
+      "designation": "RDC Project Manager"
     },
     {
       "name": "Satish Kumar",
       "image": "../team/Heads/Satish.png",
       "designation": "Chairman"
-    },
-    {
-      "name": "Prempal",
-      "image": "../team/Heads/Prempal.jpg",
-      "designation": "Chairman"
-    },
-    {
-      "name": "G. Ramesh",
-      "image": "../team/Heads/Ramesh.jpg",
-      "designation": "Chairman"
-    },
-    {
-      "name": "Mahendrakumar",
-      "image": "../team/Heads/Mahendra Kumar.png",
-      "designation": "Convener"
-    },
-    {
-      "name": "Prasad S Onkar",
-      "image": "../team/Heads/Prasad.jpg",
-      "designation": "UBA Coordinator"
-    },
-    {
-      "name": "Saurabh Sandilya",
-      "image": "../team/Heads/Saurabh.jpg",
-      "designation": "NSS Coordinator"
-    },
-    {
-      "name": "Ambika S",
-      "image": "../team/Heads/Ambika.png",
-      "designation": "Member"
-    },
-    {
-      "name": "Amit Acharyya",
-      "image": "../team/Heads/Amit.jpg",
-      "designation": "Member"
-    },
-    {
-      "name": "Aravind Kumar",
-      "image": "../team/Heads/Aravind.jpg",
-      "designation": "Member"
-    },
-    {
-      "name": "Badri Narayan Rath",
-      "image": "../team/Heads/Badri.jpg",
-      "designation": "Member"
-    },
-    {
-      "name": "Shiva Ji",
-      "image": "../team/Heads/Shiva.jpg",
-      "designation": "Member"
     }
   ],
   "overallHeads": [
