@@ -1,0 +1,35 @@
+{
+  "upcomingEvents": [
+    {
+      "title": "School Visit",
+      "date": "9/21/2024",
+      "time": "10:00:00 AM",
+      "venue": "Kandi",
+      "image": "/Events/1.jpg",
+      "description": "We are excited to announce a visit to a school in Kandi on Saturday. This event aims to engage with students and promote educational enrichment through interactive activities and workshops. Our goal is to inspire a love for learning and provide valuable resources that enhance their academic experience. By fostering connections between our organization and the school community, we hope to empower students and encourage their personal and educational growth. Join us in making a positive impact on the lives of young learners!"
+    }
+  ],
+  "finishedEvents": [
+    {
+      "title": "Prerna",
+      "date": "12/17/2024",
+      "time": "10:00:00 AM",
+      "venue": "IIT Hyderabad",
+      "description": "We invite school students to join us for an exciting and educational event at the Indian Institute of Technology Hyderabad (IITH) campus on December 17, 2024. Prerna is an event aimed at motivating school students and introducing them to the world of higher education and innovation. The day includes inspiring speeches by esteemed guests, an engaging campus tour, a fun quiz, cultural performances, and interactive sessions with IPS and IRS officers. The event concludes with prize distribution. Join us for a day of discovery and excitement at IITH!"
+    },
+    {
+      "title": "School Visit",
+      "date": "9/21/2024",
+      "time": "10:00:00 AM",
+      "venue": "Kandi",
+      "description": "We are excited to announce a visit to a school in Kandi on Saturday. This event aims to engage with students and promote educational enrichment through interactive activities and workshops. Our goal is to inspire a love for learning and provide valuable resources that enhance their academic experience. By fostering connections between our organization and the school community, we hope to empower students and encourage their personal and educational growth. Join us in making a positive impact on the lives of young learners!"
+    },
+    {
+      "title": "Orphanage Visit",
+      "date": "9/15/2024",
+      "time": "10:00:00 AM",
+      "venue": "Mahima Ministries",
+      "description": "Join us for a meaningful event as we visit the Mahima Ministries orphanage on Sunday. This initiative aims to support the children living there by providing essential supplies, clothing, and educational resources. Our goal is to foster a sense of community and compassion, ensuring that these children feel loved and supported. Together, we can make a positive impact in their lives and contribute to their well-being and development."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 function AnnouncementsCard({ data }) {
   return (
-    <div className="flex flex-col items-center scale-100">
+    <div className="flex flex-col items-center scale-100 font-montserrat">
       <div className="relative w-full max-w-xs h-[12vh]">
         <div className="absolute inset-0 bg-[#395B21] rounded-lg flex items-center justify-center">
           <span className="text-white text-2xl truncate font-bold text-center">

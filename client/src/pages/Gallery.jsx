@@ -6,15 +6,15 @@ import "@splidejs/splide/dist/css/splide.min.css";
 import "@splidejs/react-splide/css";
 import axios from "axios";
 // import Orphanage from "../assets/Events/10.jpg";
-import eventData from "../../public/Events/eventData.json";
+import eventData from "../../public/Events/gallery.json";
 
 const Gallery = () => {
   // const [events, setEvents] = useState([]);
   const [activeEventIndex, setActiveEventIndex] = useState(0);
 
   return (
-    <div className="flex flex-col items-center w-full mt-4 lg:min-h-screen">
-      <div className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-light tracking-widest w-full text-center font-montserrat mx-auto">
+    <div className="flex flex-col items-center w-full mt-4 lg:min-h-screen font-montserrat">
+      <div className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-light tracking-widest w-full text-center mx-auto">
         G A L L E R Y
       </div>
       <img
@@ -44,7 +44,7 @@ const Gallery = () => {
               <SplideSlide key={index}>
                 <GalleryCard
                   title={event.title}
-                  description={event.description}
+                  description={event.descriptions[index]}
                   index={eventIndex}
                   image={image}
                 />

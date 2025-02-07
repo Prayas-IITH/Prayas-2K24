@@ -1,0 +1,33 @@
+{
+  "events": [
+    {
+      "title": "School visit",
+      "date": "9/21/2024",
+      "time": "10:00:00 AM",
+      "venue": "Kandi",
+      "description": "Cleanliness, competitions",
+      "images": [
+        "/Events/Schools/10.jpg",
+        "/Events/Schools/6.jpg",
+        "/Events/Schools/2.jpg"
+      ],
+      "descriptions": [
+        "Prayas volunteers from IITH teaching school students.",
+        "Prayas volunteers depicting an experiment.",
+        "Prayas volunteers interacting with students."
+      ]
+    },
+    {
+      "title": "Visit to Orphanage",
+      "date": "9/15/2024",
+      "time": "10:00:00 AM",
+      "venue": "Mahima Ministries",
+      "description": "We visited orphanage to interact with children. It got great connecting to little minds with big dreams.",
+      "images": ["/Events/Orphanage/7.jpg", "/Events/Orphanage/15.jpg"],
+      "descriptions": [
+        "Orphanage children exploring their interests like drawing.",
+        "A moment of joy with children engaging in activities like essay writing."
+      ]
+    }
+  ]
+}

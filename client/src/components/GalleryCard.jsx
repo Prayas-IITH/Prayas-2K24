@@ -1,16 +1,14 @@
-import Orphanage from "../../public/Events/10.jpg";
-
 function GalleryCard({ title, description, image, index }) {
   // console.log(data.image);
   // console.log(image);
   return (
-    <div className="flex flex-col w-full max-w-[1200px] mx-auto px-4">
-      <div className="text-2xl font-light tracking-widest w-full text-center m-4 font-montserrat mx-auto">
+    <div className="flex flex-col w-full max-w-[1000px] mx-auto px-4 font-montserrat">
+      <div className="text-2xl font-light tracking-widest w-full text-center m-4 mx-auto">
         {title.toUpperCase()}
       </div>
 
       <div
-        className={`flex flex-col md:flex-row w-full mx-auto rounded-2xl h-auto md:h-[50vh] ${
+        className={`flex flex-col md:flex-row w-full mx-auto rounded-2xl h-auto md:h-[50vh] shadow-lg border border-8 border-[#556B2F] ${
           index % 2 === 0 ? "bg-[#EDCB5D]" : "bg-[#E5DD57]"
         }`}
       >
@@ -23,7 +21,7 @@ function GalleryCard({ title, description, image, index }) {
         </div>
 
         <div className="flex flex-col justify-center w-full md:w-2/5 justify-start p-4 overflow-hidden">
-          <div className="text-xl md:text-2xl lg:text-2xl font-light font-montserrat mb-2">
+          <div className="text-xl md:text-2xl lg:text-2xl font-montserrat mb-2">
             {title}
           </div>
 
