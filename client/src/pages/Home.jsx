@@ -1,4 +1,5 @@
 import React from "react";
+import PrayasRdc from "../../public/prayasRdc.png";
 
 const About = () => {
   return (
@@ -22,7 +23,7 @@ const PrayasInfo = () => {
         <div className="flex flex-col lg:flex-row lg:bg-[#556B2F] items-center justify-center w-3/4 rounded-lg overflow-hidden">
           <div className="w-full lg:w-1/2 rounded-l-2xl flex items-center m-2">
             <img
-              src="../../public/Frame 27.png"
+              src={PrayasRdc}
               alt="Prayas RDC Illustration"
               className="w-full"
             />
@@ -52,7 +53,7 @@ const PrayasInfo = () => {
           </div>
           <div className="w-full lg:w-1/2 bg-[#556B2F] rounded-l-2xl flex items-center m-2 order-1 lg:order-2">
             <img
-              src="../../public/Events/1.jpg"
+              src="../Events/1.jpg"
               alt="Prayas RDC Illustration"
               className="w-full"
             />

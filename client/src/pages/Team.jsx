@@ -217,7 +217,7 @@ const Team = () => {
                 team.coords.length === 1
                   ? "grid-cols-1"
                   : team.coords.length === 2
-                  ? "grid-cols-2 lg:w-3/5"
+                  ? "grid-cols-1 lg:grid-cols-2 lg:w-3/5 lg:scale-[0.8]"
                   : "grid-cols-1 sm:grid-cols-3 lg:grid-cols-3"
               }`}
             >

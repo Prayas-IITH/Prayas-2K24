@@ -22,7 +22,7 @@ const TeamMember = ({ name, personImage, designation }) => {
         {/* Ribbon Image */}
         <img src={Ribbon} alt="Ribbon" className="w-full object-contain" />
         {/* Name and Designation on Ribbon */}
-        <div className="absolute inset-0 scale-[1] flex flex-col items-center justify-center">
+        <div className="absolute inset-0 scale-[0.8] flex flex-col items-center justify-center">
           <h3 className="text-white text-sm md:text-lg lg:text-lg font-semibold">
             {name}
           </h3>
