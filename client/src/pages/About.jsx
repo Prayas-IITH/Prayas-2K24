@@ -1,5 +1,5 @@
 import React from "react";
-import PrayasRdc from '../assets/prayasRdc.png'
+import PrayasRdc from "../../public/prayasRdc.png";
 
 const About = () => {
   return (
