@@ -23,7 +23,7 @@ function App() {
       <div
         className="flex flex-col items-center flex-grow bg-[#FFFDF5] bg-repeat bg-top"
         style={{
-          backgroundImage: `url('/src/assets/Bg2.png')`,
+          backgroundImage: `url('/public/Bg2.png')`,
           // backgroundSize: "cover",
           // backgroundRepeat: "repeat",
           // backgroundBlendMode: "overlay",
