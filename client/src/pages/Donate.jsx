@@ -7,18 +7,18 @@ function Donate() {
   };
 
   return (
-    <div>
-      <div className="flex items-center justify-center h-4/5 w-full my-5 z-10 tracking-widest text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-montserrat">
-        D O N A T E
-      </div>
-
-      {/* Divider Image */}
-      <div className="flex items-center justify-center mb-10">
-        <img
-          src={DividerImage}
-          alt="Divider"
-          className="w-3/4 h-8 sm:h-2 md:h-8"
-        />
+    <div className="w-full">
+      <div className="font-montserrat w-full">
+        <div className="text-center py-10 w-full">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 tracking-widest">
+            D O N A T E
+          </h1>
+          <div className="flex justify-center items-center mb-8">
+            <hr className="w-1/4 border-t-2 border-black" />
+            <span className="mx-4 text-2xl">✦</span>
+            <hr className="w-1/4 border-t-2 border-black" />
+          </div>
+        </div>
       </div>
 
       <div className="relative flex flex-col items-center justify-center h-screen px-8 py-16 font-montserrat">
