@@ -94,16 +94,17 @@ const Team = () => {
   // Render Prayas team content
   const renderPrayasContent = () => (
     <>
-      <div className="flex items-center justify-center h-4/5 w-full my-5 lg:mb-5 z-10 tracking-widest text-2xl sm:text-4xl lg:text-6xl">
-        T E A M
-      </div>
-
-      <div className="flex items-center justify-center">
-        <img
-          src={DividerImage}
-          alt="Divider"
-          className="w-2/3 lg:w-auto h-3 md:h-8"
-        />
+      <div className="font-montserrat">
+        <div className="text-center py-3">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 tracking-widest">
+            T E A M
+          </h1>
+          <div className="flex justify-center items-center">
+            <hr className="w-1/4 border-t-2 border-black" />
+            <span className="mx-4 text-2xl">✦</span>
+            <hr className="w-1/4 border-t-2 border-black" />
+          </div>
+        </div>
       </div>
       {/* <div className="flex justify-center items-center mb-8">
         <hr className="w-1/4 border-t-2 border-black" />
@@ -239,18 +240,18 @@ const Team = () => {
   // Render RDC team content
   const renderRdcContent = () => (
     <>
-      <div className="flex items-center justify-center text-2xl lg:text-6xl my-10 tracking-widest">
-        R D C
+      <div className="font-montserrat">
+        <div className="text-center py-1">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 tracking-widest">
+            R D C
+          </h1>
+          <div className="flex justify-center items-center mb-1">
+            <hr className="w-1/4 border-t-2 border-black" />
+            <span className="mx-4 text-2xl">✦</span>
+            <hr className="w-1/4 border-t-2 border-black" />
+          </div>
+        </div>
       </div>
-
-      <div className="flex items-center justify-center">
-        <img
-          src={DividerImage}
-          alt="Divider"
-          className="w-2/3 lg:w-auto h-3 md:h-8"
-        />
-      </div>
-
       <div className="flex items-center justify-center my-6 md:my-10">
         <div
           className={`w-full grid gap-10 ${

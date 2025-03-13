@@ -19,9 +19,9 @@ const Events = () => {
 
   return (
     <div className="w-full min-h-screen font-montserrat">
-      <div className="text-center py-10">
+      <div className="text-center py-10 ">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 tracking-widest">
-          EVENTS
+          E V E N T S
         </h1>
         <div className="flex justify-center items-center mb-8">
           <hr className="w-1/4 border-t-2 border-black" />

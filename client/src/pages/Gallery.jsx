@@ -14,14 +14,16 @@ const Gallery = () => {
 
   return (
     <div className="flex flex-col items-center w-full mt-4 lg:min-h-screen font-montserrat">
-      <div className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-light tracking-widest w-full text-center mx-auto">
-        G A L L E R Y
+      <div className="text-center py-10 w-full">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 tracking-widest">
+          G A L L E R Y
+        </h1>
+        <div className="flex justify-center items-center mb-8">
+          <hr className="w-1/4 border-t-2 border-black" />
+          <span className="mx-4 text-2xl">✦</span>
+          <hr className="w-1/4 border-t-2 border-black" />
+        </div>
       </div>
-      <img
-        src={line}
-        alt="line"
-        className="mx-auto w-fit lg:scale-x-[0.6] my-8"
-      />
       {eventData.events.map((event, eventIndex) => (
         <div key={eventIndex} className="w-full lg:w-3/4 mx-auto relative mb-8">
           <Splide

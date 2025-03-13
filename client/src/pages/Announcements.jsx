@@ -27,10 +27,16 @@ function Announcements() {
 
   return (
     <div className="flex flex-col min-h-screen p-4 font-montserrat">
-      <div className="text-xl sm:text-3xl md:text-3xl lg:text-5xl tracking-widest w-full text-center mb-4">
-        A N N O U N C E M E N T S
+      <div className="text-center py-10">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 tracking-widest">
+          A N N O U N C E M E N T S
+        </h1>
+        <div className="flex justify-center items-center mb-8 w-full">
+          <hr className="w-3/4 border-t-2 border-black" />
+          <span className="mx-4 text-2xl">✦</span>
+          <hr className="w-3/4 border-t-2 border-black" />
+        </div>
       </div>
-      <img src={line} alt="line" className="mx-auto w-fit mb-8" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
         {events.map((item, index) => (
           <AnnouncementsCard key={index} data={item} />

@@ -14,7 +14,11 @@ function Donate() {
 
       {/* Divider Image */}
       <div className="flex items-center justify-center mb-10">
-        <img src={DividerImage} alt="Divider" className="w-auto h-8 md:h-8" />
+        <img
+          src={DividerImage}
+          alt="Divider"
+          className="w-3/4 h-8 sm:h-2 md:h-8"
+        />
       </div>
 
       <div className="relative flex flex-col items-center justify-center h-screen px-8 py-16 font-montserrat">
@@ -27,12 +31,13 @@ function Donate() {
         >
           {/* Inner gray box */}
           <div
-            className="absolute inset-3 bg-[#f2f2f2] rounded-[20px] flex items-center justify-center text-xl font-bold
+            className="absolute inset-3 bg-[#f2f2f2] rounded-[20px] flex flex-col items-center justify-center
                           sm:inset-4
                           md:inset-5
                           lg:inset-6"
           >
-            QR Code
+            <span className="font-bold text-xl">QR Code</span>
+            <span>Will be updated soon</span>
           </div>
         </div>
         {/* 'OR' section */}
@@ -64,20 +69,20 @@ function Donate() {
         </p>
         {/* Donate button */}
         <div
-          className="relative flex items-center justify-center w-full max-w-lg h-20 hover:bg-opacity-50 bg-[#273f17] hover:text-black hover:font-bold text-white rounded-full
+          className="relative flex items-center justify-center w-3/4 max-w-lg hover:bg-opacity-50 bg-[#273f17] hover:text-black hover:font-bold text-white rounded-full
                         sm:max-w-sm sm:h-16
                         md:max-w-md md:h-18
                         lg:max-w-lg lg:h-20"
         >
           <span
-            className="[font-family:'Montserrat-Medium',Helvetica] font-medium text-2xl tracking-[4.32px]
+            className="[font-family:'Montserrat-Medium',Helvetica] font-medium tracking-[4.32px]
                            sm:text-lg
                            md:text-xl
                            lg:text-2xl"
           >
             <button
               onClick={handleDonateClick}
-              className="[font-family:'Montserrat-Medium',Helvetica] font-medium text-2xl tracking-[4.32px]
+              className="[font-family:'Montserrat-Medium',Helvetica] font-medium tracking-[4.32px]
                            sm:text-lg
                            md:text-xl
                            lg:text-2xl"
