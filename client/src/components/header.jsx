@@ -30,7 +30,7 @@ function Navbar() {
           <img
             src={Logo}
             alt="Logo"
-            className="w-8 h-8 mr-2" // Adjust the size of the logo
+            className="w-10 h-10 mr-2" // Adjust the size of the logo
           />
           <p className="text-2xl font-semibold text-[#000000] tracking-widest font-montserrat">
             PRAYAS
