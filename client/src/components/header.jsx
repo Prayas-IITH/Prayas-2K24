@@ -14,6 +14,7 @@ function Navbar() {
     { to: "/announcements", label: "ANNOUNCEMENTS" },
     { to: "/team", label: "TEAM" },
     { to: "/contact", label: "HOW TO INVOLVE" },
+    {to:"/RDC",label:"RDC"},
     { to: "/donate", label: "DONATE" },
   ];
 

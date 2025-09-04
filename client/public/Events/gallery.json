@@ -1,6 +1,44 @@
 {
   "events": [
     {
+      "title": "Prerna",
+      "date": "2025",
+      "time": "",
+      "venue": "ZPHS",
+      "description": "Invited students and parents from six ZPHS schools to the campus for motivational talks by Director of IITH, professors and successful bureaucrats who excelled in their careers after graduating from ZPHS schools",
+      "images": ["prerna1.jpg", "prerna2.jpg","prerna3.jpg"],
+      "descriptions": [
+        "Students and parents from six ZPHS schools were invited to visit the IITH campus for an inspiring experience",
+        "Motivational talks were delivered by the Director of IITH and senior professors, sharing insights on higher education and career growth.",
+        "Successful bureaucrats, who began their journey at ZPHS schools, shared their career experiences and strategies for achieving excellence."
+      ]
+    },
+    {
+      "title": "DEEKSHA",
+      "date": "2025",
+      "time": "",
+      "venue": "ZPHS",
+      "description": "Conducted exams for the 7th, 8th and 9th class students for the 6 ZPHS school students.Selected  total  36 students, two from each class.Conducted sunshine session and a talk with Dr. Himabindu (MAE dept).Other key activities for them to open up about their career.",
+      "images": ["deeksha1.jpg", "deeksha2.jpg","deeksha3.jpg"],
+      "descriptions": [
+        "Conducted exams for 7th, 8th, and 9th class students across six ZPHS schools, and selected a total of 36 students (two from each class).",
+        "Organized a sunshine session and an interactive talk with Dr. Himabindu from the MAE department.",
+        "Facilitated additional activities aimed at helping students explore and open up about their future career aspirations."
+      ]
+    },{
+      "title": "Srusti",
+      "date": "2025",
+      "time": "",
+      "venue": "ZPHS and private Schools",
+      "description": "Promotes interest towards science and technology among students.Both ZPHS and Private schools from all over Telangana state.Received 120+ application from all over Telangana and best 30 are shortlisted. Exhibition of the experiments to showcase during the event.Promotes new ideas and innovations and competitive spirit. Building student-teacher relationship. ",
+      "images": ["srusti1.jpg", "srusti2.jpg","srusti3.jpg"],
+      "descriptions": [
+        "Promotes interest in science and technology among students from both ZPHS and private schools across Telangana.",
+        "Received over 120 applications from across the state, with the top 30 students shortlisted to showcase their experiments during the event.",
+        "Encourages new ideas, innovation, and a competitive spirit while fostering strong student-teacher relationships."
+      ]
+    },
+    {
       "title": "School visit",
       "date": "9/21/2024",
       "time": "10:00:00 AM",

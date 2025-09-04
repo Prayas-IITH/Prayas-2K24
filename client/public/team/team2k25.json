@@ -1,0 +1,143 @@
+{
+  "coreTeam": [
+    {
+      "name": "Sahasra Garuvandula",
+      "image": "team/new_team2k25/SAHASRA PHOTO - Sahasra Garuvandula.jpg",
+      "designation": "President"
+    },
+    {
+      "name": "Poliboina Dharani",
+      "image": "team/new_team2k25/photo (3) - Poliboina Dharani.jpeg",
+      "designation": "Secretary"
+    },
+    {
+      "name": "Tejaswini",
+      "image": "team/new_team2k25/fc81fd02-d658-4ff5-8491-95469cc04890 - Dharavath Yuva Tejaswini.jpeg",
+      "designation": "Executive"
+    }
+  ],
+  "domainHeads": [
+    {
+      "name": "Ramagiri Jaidhar",
+      "image": "team/new_team2k25/Photo - Ramagiri Jaidhar.jpg",
+      "designation": "PR & Outreach"
+    },
+    {
+      "name": "Nandigama Vaishnavi",
+      "image": "team/new_team2k25/1000038376 (1) - Nandigama Vaishnavi.jpg",
+      "designation": "PR & Outreach"
+    },
+    {
+      "name": "Poliboina Dharani",
+      "image": "team/new_team2k25/photo (3) - Poliboina Dharani.jpeg",
+      "designation": "Multimedia"
+    },
+    {
+      "name": "Budde Dhathvi Charan",
+      "image": "team/new_team2k25/charan.png",
+      "designation": "Multimedia"
+    },
+    {
+      "name": "B S P Krishna Chaitanya Reddy",
+      "image": "team/new_team2k25/IMG_20240525_114758~3 - B S P Krishna Chaitanya Reddy.jpg",
+      "designation": "Events"
+    },
+    {
+      "name": "Sai Krishna Bugga",
+      "image": "team/new_team2k25/IMG-20250623-WA0009 - Sai Krishna Bugga.jpg",
+      "designation": "Events"
+    },
+    {
+      "name": "Hanokk",
+      "image": "team/new_team2k25/IMG_20250626_200625 - Hanokk.jpg",
+      "designation": "Funding & Sponsors"
+    },
+    {
+      "name": "Dheekshith Maddela",
+      "image": "team/new_team2k25/IMG_20250328_100150139_HDR~2 - Dheekshith Maddela.jpg",
+      "designation": "Finance"
+    },
+    {
+      "name": "Garigipati Hari Karthik",
+      "image": "team/new_team2k25/PXL_20250301_120914409.PORTRAIT - Garigipati Hari Karthik.jpg",
+      "designation": "Finance"
+    },
+    {
+      "name": "Varala Akshay Kumar",
+      "image": "team/new_team2k25/IMG_20250618_100658 - Varala Akshay Kumar.jpg",
+      "designation": "Hospitality & Logistics"
+    },
+    {
+      "name": "Afzaal Ahmad",
+      "image": "team/new_team2k25/Webp.net-resizeimage (1) - Afzaal Ahmad.jpg",
+      "designation": "Hospitality & Logistics"
+    },
+    {
+      "name": "Prince Verma",
+      "image": "team/new_team2k25/model - Prince Verma.jpeg",
+      "designation": "VCU"
+    },
+    {
+      "name": "Ankitha",
+      "image": "team/new_team2k25/ankitha.png",
+      "designation": "VCU"
+    },
+    {
+      "name": "Guna Sekhar Reddy",
+      "image": "team/new_team2k25/me (1) (1) - Guna Sekhar Reddy.jpg",
+      "designation": "Campus Tour"
+    },
+    {
+      "name": "Domakonda Charanya",
+      "image": "team/new_team2k25/IMG_20250623_190036 - Domakonda Charanya.jpg",
+      "designation": "Campus Tour"
+    },
+    {
+      "name": "Pratapani Sai Nishant",
+      "image": "team/new_team2k25/Me - Pratapani Sai Nishant.jpg",
+      "designation": "Transport"
+    },
+    {
+      "name": "Aryan Dake",
+      "image": "team/new_team2k25/IMG_3553 - Aryan Dake.jpeg",
+      "designation": "Transport"
+    },
+    {
+      "name": "Sammeta Sai Poorna",
+      "image": "team/new_team2k25/IMG_20250124_163406_835 - Sammeta Sai Poorna.jpg",
+      "designation": "Education Program Manager"
+    },
+    {
+      "name": "Endravath Charan Naik",
+      "image": "team/new_team2k25/Screenshot_20250626-174916.WhatsApp - Endravath Charan Naik.png",
+      "designation": "Education Program Manager"
+    },
+    {
+      "name": "Perugu Rohith",
+      "image": "team/new_team2k25/rohith.png",
+      "designation": "Web & Design"
+    }
+  ],
+  "mentors": [
+    {
+      "name": "Gayatri Priya",
+      "image": "team/new_team2k25/gayatri_priya.png",
+      "designation": "Mentor"
+    },
+    {
+      "name": "Mohit",
+      "image": "team/new_team2k25/mohit.png",
+      "designation": "Mentor"
+    },
+    {
+      "name": "Naresh Rathod",
+      "image": "team/new_team2k25/naresh.png",
+      "designation": "Mentor"
+    },
+    {
+      "name": "Sai Kiran",
+      "image": "team/new_team2k25/saikiran.png",
+      "designation": "Mentor"
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import Error from "./pages/Error";
 import Navbar from "./components/header";
 import "./index.css";
 import Footer from "./components/Footer1";
+import RDC from "./pages/RDC";
 
 function App() {
   const location = useLocation();
@@ -38,6 +39,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/RDC" element={<RDC />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
