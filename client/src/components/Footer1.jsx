@@ -24,7 +24,7 @@ function Footer() {
           <div>
             <span className="block font-semibold">Dharani</span>
             <span className="block">Secretary</span>
-            <span className="block">Me24btech11009@iith.ac.in</span>
+            <span className="block">Me24btech12009@iith.ac.in</span>
           </div>
         </div>
 
