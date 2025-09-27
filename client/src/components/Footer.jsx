@@ -11,6 +11,7 @@ function Footer() {
           <span>Overall Head</span>
           {/* <span>+91 6305430598</span> */}
           <span>ep23btech11032@iith.ac.in</span>
+          
         </div>
         <img
           src={bar}
