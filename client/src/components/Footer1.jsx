@@ -13,17 +13,17 @@ function Footer() {
         <div className="flex flex-col text-center mb-4 sm:mb-0 justify-center">
           <div className="mb-3">
             <span className="block font-semibold">Sahasra</span>
-            <span className="block">Core Team</span>
+            <span className="block">President</span>
             <span className="block">Me24btech11050@iith.ac.in</span>
           </div>
           <div className="mb-3">
             <span className="block font-semibold">Tejaswini</span>
-            <span className="block">Core Team</span>
+            <span className="block">Executive</span>
             <span className="block">Ce24btech11019@iith.ac.in</span>
           </div>
           <div>
             <span className="block font-semibold">Dharani</span>
-            <span className="block">Core Team</span>
+            <span className="block">Secretary</span>
             <span className="block">Me24btech11009@iith.ac.in</span>
           </div>
         </div>
