@@ -43,7 +43,7 @@ function Footer() {
           <div className="mb-3">
             <span className="block font-semibold">Vaishnavi</span>
             <span className="block">PR & Outreach</span>
-            <span className="block">ep23btech11045@iith.ac.in</span>
+            <span className="block">me24btech11045@iith.ac.in</span>
           </div>
           <div>
             <span className="block font-semibold">Jaidhar</span>
