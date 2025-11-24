@@ -27,13 +27,20 @@
   ],
   "finishedEvents": [
     {
+      "title": "Prerna 2025",
+      "date": "November 2, 2025",
+      "time": "10:00:00 AM",
+      "venue": "IIT Hyderabad",
+      "description": "Prerna 2025, organized by Prayas – Rural Development Centre (RDC), IIT Hyderabad, brought together nearly 580 students, parents, and teachers from six nearby rural schools. The event aimed to motivate young learners through awareness talks, campus exposure, and interactive learning. Highlights included motivational sessions by IIT Hyderabad faculty, Sangareddy Police teams, and Shri Paritosh Pankaj, IPS, a campus tour, a STEM Balloon-Powered Car workshop, a school quiz competition, cultural performances, and a special visit from the Hamamatsu Delegation of Japan. The program strengthened IIT Hyderabad’s connection with rural communities and encouraged students to dream big and pursue education with confidence."
+    },
+    {
       "title": "BHAVISHYA",
       "date": "2025",
       "time": "",
       "venue": "ZPHS",
       "description": "Prayas is launching **Bhavishya**, an initiative to spark curiosity and guide students from government schools toward academic and career possibilities. Over 7 months, domain teams will visit 7 ZPHS schools, each bringing subject expertise, career guidance, and interactive volunteers. This balanced structure ensures students gain technical knowledge, clarity on pathways, and engaging peer-to-peer learning."
     },
-     {
+    {
       "title": "SRUJANA",
       "date": "2025",
       "time": "",
@@ -53,7 +60,8 @@
       "time": "",
       "venue": "ZPHS",
       "description": "Conducted exams for the 7th, 8th and 9th class students for the 6 ZPHS school students.Selected  total  36 students, two from each class.Conducted sunshine session and a talk with Dr. Himabindu (MAE dept).Other key activities for them to open up about their career."
-    },{
+    },
+    {
       "title": "SRUSTI",
       "date": "2025",
       "time": "",
