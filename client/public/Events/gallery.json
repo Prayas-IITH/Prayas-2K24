@@ -1,6 +1,25 @@
 {
   "events": [
     {
+      "title": "NextGen IITH Discovery",
+      "date": "2026",
+      "time": "",
+      "venue": "IIT HYD",
+      "description": "The campus visit gave students a glimpse of academic life through tours and lab visits. They were highly engaged, impressed by the facilities, and inspired to pursue higher education with more practical learning experiences.",
+     "images": [
+  "/Events/WhatsApp Image 2026-03-28 at 17.05.06.jpeg",
+  "/Events/WhatsApp Image 2026-04-01 at 16.43.40.jpeg",
+  "/Events/WhatsApp Image 2026-04-01 at 16.43.45.jpeg",
+  "/Events/WhatsApp Image 2026-04-01 at 16.45.02.jpeg"
+],
+      "descriptions": [
+  "Students and parents from six ZPHS schools participated in an enriching campus experience.",
+  "Motivational sessions by the Director of IITH and senior professors highlighted education and career opportunities.",
+  "Bureaucrats from ZPHS backgrounds shared inspiring journeys and success stories.",
+  "The event encouraged students to aim higher and explore future academic possibilities."
+]
+    },
+    {
       "title": "Prerna 2K25",
       "date": "2025",
       "time": "",
